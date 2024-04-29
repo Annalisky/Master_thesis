@@ -1,0 +1,8 @@
+<EXTRA_I_FOR_CLASS_C_tc04_13_3>	1
+<I_tc04_240>	1
+<I_tc04_251>	1
+<I_tc04_0>	1
+<EXTRA_I_FOR_CLASS_C_tc04_8_7>	0
+<I_tc04_181>	0
+<I_tc04_290>	0
+<I_tc04_193>	0

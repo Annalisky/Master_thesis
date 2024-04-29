@@ -1,0 +1,13 @@
+File to be written: C:\Users\raine\Desktop\Annika\Master Thesisi\DL-TC-Generator\.\results\synthetic_ontology20\tc08\synthetic_ontology\graph.nt
+# of Instances : 300
+# of Classes : 40
+# of Properties: 80
+Max triples per node: 11
+Nodes of interest: 20
+Tree generator class: ConstantSplitTreeGenerator
+AVG Branching factor: 5
+Split number of ConstantSplitTreeGenerator: 5
+Target property: <P_tc08_7>
+Positive subject class: <C_tc08_19>
+Negative subject class: <C_tc08_29>
+
