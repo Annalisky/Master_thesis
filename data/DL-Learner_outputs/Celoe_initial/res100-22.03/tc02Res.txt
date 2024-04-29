@@ -1,0 +1,42 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 1ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 853 ms.
+... initialized component 'reasoner' in 2s 455ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 1ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 111ms. Status: OK
+Running algorithm instance "alg" (CELOE)
+start class:Thing
+more accurate (50.00%) class expression found after 37ms: Thing
+more accurate (52.50%) class expression found after 149ms: not (C_TC02_7)
+more accurate (53.12%) class expression found after 4s623ms: (not (C_TC02_18)) and (not (C_TC02_7))
+Algorithm terminated successfully (time: 10s 4ms, 4547 descriptions tested, 2902 nodes in the search tree).
+
+number of retrievals: 6084
+retrieval reasoning time: 7s 128ms ( 1ms per retrieval)
+number of instance checks: 8468 (0 multiple)
+instance check reasoning time: 32ms ( 0ms per instance check)
+(complex) subsumption checks: 42 (0 multiple)
+subsumption reasoning time: 12ms ( 0ms per subsumption check)
+overall reasoning time: 7s 175ms
+
+solutions:
+1: (not (C_TC02_18)) and (not (C_TC02_7)) (pred. acc.: 53.12%, F-measure: 68.09%)
+2: not (C_TC02_7) (pred. acc.: 52.50%, F-measure: 67.80%)
+3: C_TC02_9 or (not (C_TC02_7)) (pred. acc.: 52.50%, F-measure: 67.80%)
+4: C_TC02_5 or (not (C_TC02_7)) (pred. acc.: 52.50%, F-measure: 67.80%)
+5: C_TC02_18 or (not (C_TC02_7)) (pred. acc.: 52.50%, F-measure: 67.80%)
+6: C_TC02_17 or (not (C_TC02_7)) (pred. acc.: 52.50%, F-measure: 67.80%)
+7: C_TC02_16 or (not (C_TC02_7)) (pred. acc.: 52.50%, F-measure: 67.80%)
+8: C_TC02_0 or (not (C_TC02_7)) (pred. acc.: 52.50%, F-measure: 67.80%)
+9: C_TC02_8 and (not (C_TC02_7)) (pred. acc.: 52.50%, F-measure: 67.80%)
+10: C_TC02_4 and (not (C_TC02_7)) (pred. acc.: 52.50%, F-measure: 67.80%)
+

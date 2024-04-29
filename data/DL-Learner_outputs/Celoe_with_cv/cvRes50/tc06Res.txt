@@ -1,0 +1,623 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 0ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 104 ms.
+... initialized component 'reasoner' in 552ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 0ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 48ms. Status: OK
+start class:Thing
+more accurate (50.00%) class expression found after 24ms: Thing
+more accurate (51.39%) class expression found after 87ms: not (C_tc06_5)
+more accurate (70.83%) class expression found after 187ms: P_tc06_36 some C_tc06_7
+more accurate (76.39%) class expression found after 288ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_8)))
+more accurate (93.06%) class expression found after 883ms: P_tc06_36 some (P_tc06_20 some C_tc06_7)
+more accurate (100.00%) class expression found after 888ms: P_tc06_36 some (P_tc06_20 some C_tc06_10)
+Algorithm terminated successfully (time: 10s 0ms, 32639 descriptions tested, 11360 nodes in the search tree).
+
+number of retrievals: 34395
+retrieval reasoning time: 5s 674ms ( 0ms per retrieval)
+number of instance checks: 31417 (0 multiple)
+instance check reasoning time: 84ms ( 0ms per instance check)
+(complex) subsumption checks: 156 (0 multiple)
+subsumption reasoning time: 24ms ( 0ms per subsumption check)
+overall reasoning time: 5s 783ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_14) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_5)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_19)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_18)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_7)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (C_tc06_7 and (P_tc06_22 some C_tc06_3)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 0:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.009s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 0:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.009s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (72.22%) class expression found after 34ms: P_tc06_36 some C_tc06_7
+more accurate (77.78%) class expression found after 103ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_8)))
+more accurate (94.44%) class expression found after 560ms: P_tc06_36 some (P_tc06_20 some C_tc06_7)
+more accurate (100.00%) class expression found after 563ms: P_tc06_36 some (P_tc06_20 some C_tc06_10)
+Algorithm terminated successfully (time: 10s 7ms, 33244 descriptions tested, 12120 nodes in the search tree).
+
+number of retrievals: 67732
+retrieval reasoning time: 11s 364ms ( 0ms per retrieval)
+number of instance checks: 60929 (14 multiple)
+instance check reasoning time: 164ms ( 0ms per instance check)
+(complex) subsumption checks: 302 (0 multiple)
+subsumption reasoning time: 34ms ( 0ms per subsumption check)
+overall reasoning time: 11s 564ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_14) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_19)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_18)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_14)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_13)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (C_tc06_7 and (P_tc06_22 some C_tc06_3)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 1:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.012s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 1:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.012s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (75.00%) class expression found after 37ms: P_tc06_36 some C_tc06_7
+more accurate (80.56%) class expression found after 82ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_6)))
+more accurate (94.44%) class expression found after 196ms: P_tc06_36 some (P_tc06_14 some C_tc06_7)
+more accurate (98.61%) class expression found after 200ms: P_tc06_36 some (P_tc06_14 some C_tc06_18)
+more accurate (100.00%) class expression found after 204ms: P_tc06_36 some (P_tc06_20 some C_tc06_10)
+Algorithm terminated successfully (time: 10s 0ms, 33616 descriptions tested, 12197 nodes in the search tree).
+
+number of retrievals: 101452
+retrieval reasoning time: 17s 247ms ( 0ms per retrieval)
+number of instance checks: 92688 (28 multiple)
+instance check reasoning time: 244ms ( 0ms per instance check)
+(complex) subsumption checks: 474 (0 multiple)
+subsumption reasoning time: 45ms ( 0ms per subsumption check)
+overall reasoning time: 17s 538ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_14) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_20 some (P_tc06_2 some C_tc06_8)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_19)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_18)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_7)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (C_tc06_7 and (P_tc06_22 some C_tc06_3)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 2:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.007s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 2:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (70.83%) class expression found after 30ms: P_tc06_36 some C_tc06_7
+more accurate (76.39%) class expression found after 93ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_8)))
+more accurate (94.44%) class expression found after 566ms: P_tc06_36 some (P_tc06_14 some C_tc06_7)
+more accurate (98.61%) class expression found after 569ms: P_tc06_36 some (P_tc06_14 some C_tc06_18)
+more accurate (100.00%) class expression found after 575ms: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+Algorithm terminated successfully (time: 10s 0ms, 33699 descriptions tested, 12422 nodes in the search tree).
+
+number of retrievals: 135247
+retrieval reasoning time: 22s 987ms ( 0ms per retrieval)
+number of instance checks: 132569 (42 multiple)
+instance check reasoning time: 350ms ( 0ms per instance check)
+(complex) subsumption checks: 618 (0 multiple)
+subsumption reasoning time: 56ms ( 0ms per subsumption check)
+overall reasoning time: 23s 395ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_14) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_28 some (P_tc06_36 some C_tc06_4)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_28 some (C_tc06_14 or C_tc06_18)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_28 some (C_tc06_14 or C_tc06_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_28 some (C_tc06_14 or C_tc06_15)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_7)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (C_tc06_7 and (P_tc06_22 some C_tc06_3)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 3:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 3:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (73.61%) class expression found after 29ms: P_tc06_36 some C_tc06_7
+more accurate (79.17%) class expression found after 60ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_8)))
+more accurate (93.06%) class expression found after 151ms: P_tc06_36 some (P_tc06_14 some C_tc06_7)
+more accurate (98.61%) class expression found after 154ms: P_tc06_36 some (P_tc06_14 some C_tc06_18)
+more accurate (100.00%) class expression found after 157ms: P_tc06_36 some (P_tc06_20 some C_tc06_10)
+Algorithm terminated successfully (time: 10s 0ms, 34079 descriptions tested, 12434 nodes in the search tree).
+
+number of retrievals: 169436
+retrieval reasoning time: 28s 717ms ( 0ms per retrieval)
+number of instance checks: 164301 (56 multiple)
+instance check reasoning time: 429ms ( 0ms per instance check)
+(complex) subsumption checks: 800 (0 multiple)
+subsumption reasoning time: 65ms ( 0ms per subsumption check)
+overall reasoning time: 29s 212ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_14) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_19)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_18)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_7)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (C_tc06_7 and (P_tc06_22 some C_tc06_3)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 4:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 4:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (72.22%) class expression found after 29ms: P_tc06_36 some C_tc06_7
+more accurate (77.78%) class expression found after 90ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_8)))
+more accurate (93.06%) class expression found after 513ms: P_tc06_36 some (P_tc06_14 some C_tc06_7)
+more accurate (98.61%) class expression found after 516ms: P_tc06_36 some (P_tc06_14 some C_tc06_18)
+more accurate (100.00%) class expression found after 521ms: P_tc06_36 some (P_tc06_20 some C_tc06_10)
+Algorithm terminated successfully (time: 10s 0ms, 33877 descriptions tested, 12484 nodes in the search tree).
+
+number of retrievals: 203424
+retrieval reasoning time: 34s 491ms ( 0ms per retrieval)
+number of instance checks: 197341 (70 multiple)
+instance check reasoning time: 514ms ( 0ms per instance check)
+(complex) subsumption checks: 1000 (0 multiple)
+subsumption reasoning time: 72ms ( 0ms per subsumption check)
+overall reasoning time: 35s 79ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_14) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_19)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_18)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_7)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (C_tc06_7 and (P_tc06_22 some C_tc06_3)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 5:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 5:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (73.61%) class expression found after 29ms: P_tc06_36 some C_tc06_7
+more accurate (79.17%) class expression found after 59ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_6)))
+more accurate (94.44%) class expression found after 151ms: P_tc06_36 some (P_tc06_14 some C_tc06_7)
+more accurate (98.61%) class expression found after 154ms: P_tc06_36 some (P_tc06_14 some C_tc06_18)
+more accurate (100.00%) class expression found after 159ms: P_tc06_36 some (P_tc06_28 some C_tc06_6)
+Algorithm terminated successfully (time: 10s 0ms, 34378 descriptions tested, 12888 nodes in the search tree).
+
+number of retrievals: 237901
+retrieval reasoning time: 40s 335ms ( 0ms per retrieval)
+number of instance checks: 245961 (84 multiple)
+instance check reasoning time: 644ms ( 0ms per instance check)
+(complex) subsumption checks: 1158 (0 multiple)
+subsumption reasoning time: 80ms ( 0ms per subsumption check)
+overall reasoning time: 41s 61ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_6) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_28 some (P_tc06_36 some C_tc06_4)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_28 some (C_tc06_18 or C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_28 some (C_tc06_16 or C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_28 some (C_tc06_11 or C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_7)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (C_tc06_7 and (P_tc06_22 some C_tc06_3)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: [EXTRA_I_FOR_CLASS_C_tc06_4_30]
+fold 6:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_6)
+  match: 87.5% (100% on training set)
+  commission: 12.5% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.007s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: [EXTRA_I_FOR_CLASS_C_tc06_4_30]
+fold 6:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_6)
+  match: 87.5% (100% on training set)
+  commission: 12.5% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (73.61%) class expression found after 35ms: P_tc06_36 some C_tc06_7
+more accurate (79.17%) class expression found after 73ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_18)))
+more accurate (94.44%) class expression found after 167ms: P_tc06_36 some (P_tc06_14 some C_tc06_7)
+more accurate (100.00%) class expression found after 170ms: P_tc06_36 some (P_tc06_14 some C_tc06_18)
+Algorithm terminated successfully (time: 10s 0ms, 33205 descriptions tested, 12333 nodes in the search tree).
+
+number of retrievals: 271205
+retrieval reasoning time: 45s 935ms ( 0ms per retrieval)
+number of instance checks: 298918 (98 multiple)
+instance check reasoning time: 786ms ( 0ms per instance check)
+(complex) subsumption checks: 1308 (0 multiple)
+subsumption reasoning time: 86ms ( 0ms per subsumption check)
+overall reasoning time: 46s 808ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_14) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_22 some C_tc06_3) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_14 some C_tc06_18) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_7)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_14 some (C_tc06_18 or C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_14 some (C_tc06_18 or C_tc06_5)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_14 some (C_tc06_11 or C_tc06_18)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (P_tc06_14 some (C_tc06_10 or C_tc06_18)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 7:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 7:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (70.83%) class expression found after 32ms: P_tc06_36 some C_tc06_7
+more accurate (76.39%) class expression found after 92ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_8)))
+more accurate (94.44%) class expression found after 563ms: P_tc06_36 some (P_tc06_14 some C_tc06_7)
+more accurate (98.61%) class expression found after 566ms: P_tc06_36 some (P_tc06_14 some C_tc06_18)
+more accurate (100.00%) class expression found after 569ms: P_tc06_36 some (P_tc06_28 some C_tc06_4)
+Algorithm terminated successfully (time: 10s 0ms, 33139 descriptions tested, 12297 nodes in the search tree).
+
+number of retrievals: 304444
+retrieval reasoning time: 51s 574ms ( 0ms per retrieval)
+number of instance checks: 347397 (112 multiple)
+instance check reasoning time: 919ms ( 0ms per instance check)
+(complex) subsumption checks: 1470 (0 multiple)
+subsumption reasoning time: 91ms ( 0ms per subsumption check)
+overall reasoning time: 52s 585ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_4) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_28 some C_tc06_14) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_28 some (P_tc06_36 some C_tc06_4)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_28 some (C_tc06_18 or C_tc06_4)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_28 some (C_tc06_16 or C_tc06_4)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_28 some (C_tc06_12 or C_tc06_4)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_14 some (P_tc06_4 some C_tc06_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (C_tc06_7 and (P_tc06_22 some C_tc06_3)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6]
+?[]
+test set errors pos: []
+test set errors neg: [EXTRA_I_FOR_CLASS_C_tc06_4_66]
+fold 8:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_4)
+  match: 87.5% (100% on training set)
+  commission: 12.5% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_33, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_34, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_69, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_74, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_27, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_39, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_53, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6]
+?[]
+test set errors pos: []
+test set errors neg: [EXTRA_I_FOR_CLASS_C_tc06_4_66]
+fold 8:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_4)
+  match: 87.5% (100% on training set)
+  commission: 12.5% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (72.22%) class expression found after 28ms: P_tc06_36 some C_tc06_7
+more accurate (77.78%) class expression found after 86ms: P_tc06_36 some (C_tc06_7 and (not (C_tc06_8)))
+more accurate (93.06%) class expression found after 547ms: P_tc06_36 some (P_tc06_20 some C_tc06_7)
+more accurate (100.00%) class expression found after 550ms: P_tc06_36 some (P_tc06_20 some C_tc06_10)
+Algorithm terminated successfully (time: 10s 0ms, 33964 descriptions tested, 12250 nodes in the search tree).
+
+number of retrievals: 338514
+retrieval reasoning time: 57s 379ms ( 0ms per retrieval)
+number of instance checks: 380486 (126 multiple)
+instance check reasoning time: 1s 8ms ( 0ms per instance check)
+(complex) subsumption checks: 1640 (0 multiple)
+subsumption reasoning time: 95ms ( 0ms per subsumption check)
+overall reasoning time: 58s 484ms
+
+solutions:
+1: P_tc06_36 some (P_tc06_28 some C_tc06_14) (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc06_36 some (P_tc06_20 some C_tc06_10) (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc06_36 some (P_tc06_28 some (P_tc06_36 some C_tc06_4)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc06_36 some (P_tc06_28 some (C_tc06_4 and C_tc06_6)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_19)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_18)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_13)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc06_36 some (P_tc06_20 some (C_tc06_10 or C_tc06_12)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc06_36 some (C_tc06_7 and (P_tc06_22 some C_tc06_3)) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 9:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_2, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_22, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_24, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_3, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_36, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_37, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_40, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_45, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_46, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_48, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_49, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_5, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_50, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_52, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_57, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_58, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_59, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_61, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_62, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_64, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_73, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_76, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_80, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_85, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_86, http://example.org/I_tc06_127, http://example.org/I_tc06_189, http://example.org/I_tc06_193, http://example.org/I_tc06_209, http://example.org/I_tc06_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_25, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_26, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_28, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_29, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_30, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_32, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_38, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_41, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_42, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_44, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_54, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_56, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_60, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_65, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_66, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_68, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_70, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_72, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_77, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_78, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_81, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_82, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_84, http://example.org/EXTRA_I_FOR_CLASS_C_tc06_4_9, http://example.org/I_tc06_17, http://example.org/I_tc06_204, http://example.org/I_tc06_6, http://example.org/I_tc06_73]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 9:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_tc06_36 some (P_tc06_28 some C_tc06_14)
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
+
+Finished 10-folds cross-validation.
+runtime: av. 10.007s (deviation 0.002s; min 10.005s; max 10.012s)
+length: av. 5 (deviation 0; min 5; max 5)
+F-Measure on training set: av. 100% (deviation 0%; min 100%; max 100%)
+F-Measure: av. 97.778% (deviation 4.685%; min 88.889%; max 100%)
+Match rate on training set: av. 100% (deviation 0%; min 100%; max 100%)
+Match rate: av. 97.5% (deviation 5.27%; min 87.5%; max 100%)
+Commission rate: av. 2.5% (deviation 5.27%; min 0%; max 12.5%)
+Omission rate: av. 0% (deviation 0%; min 0%; max 0%)
+Induction rate: av. 0% (deviation 0%; min 0%; max 0%)

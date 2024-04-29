@@ -1,0 +1,614 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 1ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 126 ms.
+... initialized component 'reasoner' in 656ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 1ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 57ms. Status: OK
+start class:Thing
+more accurate (50.00%) class expression found after 28ms: Thing
+more accurate (57.14%) class expression found after 160ms: P_tc10_5 only C_tc10_17
+more accurate (60.71%) class expression found after 171ms: P_tc10_29 only C_tc10_17
+more accurate (67.86%) class expression found after 796ms: C_tc10_8 and (P_tc10_28 some Thing) and (P_tc10_28 only (not (C_tc10_4)))
+Algorithm terminated successfully (time: 10s 0ms, 40285 descriptions tested, 17984 nodes in the search tree).
+
+number of retrievals: 42127
+retrieval reasoning time: 6s 873ms ( 0ms per retrieval)
+number of instance checks: 30885 (0 multiple)
+instance check reasoning time: 39ms ( 0ms per instance check)
+(complex) subsumption checks: 44 (0 multiple)
+subsumption reasoning time: 20ms ( 0ms per subsumption check)
+overall reasoning time: 6s 935ms
+
+solutions:
+1: P_tc10_5 only (C_tc10_17 and (P_tc10_29 only C_tc10_17)) (pred. acc.: 67.86%, F-measure: 75.68%)
+2: P_tc10_5 only (C_tc10_17 and (P_tc10_29 only C_tc10_10)) (pred. acc.: 67.86%, F-measure: 75.68%)
+3: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_3)) (pred. acc.: 67.86%, F-measure: 75.68%)
+4: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19)) (pred. acc.: 67.86%, F-measure: 75.68%)
+5: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_18)) (pred. acc.: 67.86%, F-measure: 75.68%)
+6: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_16)) (pred. acc.: 67.86%, F-measure: 75.68%)
+7: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_13)) (pred. acc.: 67.86%, F-measure: 75.68%)
+8: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_12)) (pred. acc.: 67.86%, F-measure: 75.68%)
+9: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_11)) (pred. acc.: 67.86%, F-measure: 75.68%)
+10: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_10)) (pred. acc.: 67.86%, F-measure: 75.68%)
+
+1.0----0.07142857142857142
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_77]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_21, EXTRA_I_FOR_CLASS_C_tc10_10_14]
+test set errors neg: []
+fold 0:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_29 only C_tc10_17))
+  match: 50% (53.571% on training set)
+  commission: 50% (46.429% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.008s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_77]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_21, EXTRA_I_FOR_CLASS_C_tc10_10_14]
+test set errors neg: []
+fold 0:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_29 only C_tc10_17))
+  match: 50% (53.571% on training set)
+  commission: 50% (46.429% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.008s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (60.71%) class expression found after 17ms: P_tc10_29 only C_tc10_17
+more accurate (64.29%) class expression found after 4s688ms: P_tc10_5 only (P_tc10_19 only C_tc10_19)
+more accurate (67.86%) class expression found after 7s625ms: P_tc10_12 only (C_tc10_17 and (P_tc10_20 only C_tc10_1))
+Algorithm terminated successfully (time: 10s 0ms, 42485 descriptions tested, 19014 nodes in the search tree).
+
+number of retrievals: 84685
+retrieval reasoning time: 14s 59ms ( 0ms per retrieval)
+number of instance checks: 64534 (14 multiple)
+instance check reasoning time: 83ms ( 0ms per instance check)
+(complex) subsumption checks: 62 (0 multiple)
+subsumption reasoning time: 25ms ( 0ms per subsumption check)
+overall reasoning time: 14s 169ms
+
+solutions:
+1: P_tc10_12 only (C_tc10_17 and (P_tc10_20 only C_tc10_1)) (pred. acc.: 67.86%, F-measure: 75.68%)
+2: P_tc10_5 only (P_tc10_19 only Nothing) (pred. acc.: 64.29%, F-measure: 73.68%)
+3: P_tc10_5 only (P_tc10_19 only C_tc10_6) (pred. acc.: 64.29%, F-measure: 73.68%)
+4: P_tc10_5 only (P_tc10_19 only C_tc10_5) (pred. acc.: 64.29%, F-measure: 73.68%)
+5: P_tc10_5 only (P_tc10_19 only C_tc10_4) (pred. acc.: 64.29%, F-measure: 73.68%)
+6: P_tc10_5 only (P_tc10_19 only C_tc10_3) (pred. acc.: 64.29%, F-measure: 73.68%)
+7: P_tc10_5 only (P_tc10_19 only C_tc10_2) (pred. acc.: 64.29%, F-measure: 73.68%)
+8: P_tc10_5 only (P_tc10_19 only C_tc10_19) (pred. acc.: 64.29%, F-measure: 73.68%)
+9: P_tc10_5 only (P_tc10_19 only C_tc10_15) (pred. acc.: 64.29%, F-measure: 73.68%)
+10: P_tc10_5 only (P_tc10_19 only C_tc10_1) (pred. acc.: 64.29%, F-measure: 73.68%)
+
+0.5----0.07142857142857142
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_220, http://example.org/I_tc10_232]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_168, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [I_tc10_181, I_tc10_73]
+test set errors neg: []
+fold 1:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_12 only      (C_tc10_17      and (P_tc10_20 only C_tc10_1))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.006s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_220, http://example.org/I_tc10_232]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_168, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [I_tc10_181, I_tc10_73]
+test set errors neg: []
+fold 1:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_12 only      (C_tc10_17      and (P_tc10_20 only C_tc10_1))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (56.67%) class expression found after 12ms: P_tc10_5 only C_tc10_17
+more accurate (60.00%) class expression found after 17ms: P_tc10_29 only C_tc10_17
+more accurate (63.33%) class expression found after 174ms: C_tc10_19 or (not (C_tc10_4))
+more accurate (66.67%) class expression found after 6s853ms: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19))
+Algorithm terminated successfully (time: 10s 0ms, 47943 descriptions tested, 27327 nodes in the search tree).
+
+number of retrievals: 132845
+retrieval reasoning time: 20s 711ms ( 0ms per retrieval)
+number of instance checks: 98464 (28 multiple)
+instance check reasoning time: 126ms ( 0ms per instance check)
+(complex) subsumption checks: 161 (0 multiple)
+subsumption reasoning time: 38ms ( 0ms per subsumption check)
+overall reasoning time: 20s 877ms
+
+solutions:
+1: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_6)) (pred. acc.: 66.67%, F-measure: 75.00%)
+2: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_5)) (pred. acc.: 66.67%, F-measure: 75.00%)
+3: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_4)) (pred. acc.: 66.67%, F-measure: 75.00%)
+4: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_3)) (pred. acc.: 66.67%, F-measure: 75.00%)
+5: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_2)) (pred. acc.: 66.67%, F-measure: 75.00%)
+6: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19)) (pred. acc.: 66.67%, F-measure: 75.00%)
+7: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_16)) (pred. acc.: 66.67%, F-measure: 75.00%)
+8: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_15)) (pred. acc.: 66.67%, F-measure: 75.00%)
+9: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_13)) (pred. acc.: 66.67%, F-measure: 75.00%)
+10: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_12)) (pred. acc.: 66.67%, F-measure: 75.00%)
+
+0.0----0.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_18]
+test set errors neg: []
+fold 2:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_18]
+test set errors neg: []
+fold 2:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (60.71%) class expression found after 11ms: P_tc10_5 only C_tc10_9
+more accurate (64.29%) class expression found after 65ms: P_tc10_5 only (C_tc10_17 and C_tc10_9)
+more accurate (67.86%) class expression found after 5s358ms: P_tc10_8 only (C_tc10_1 or C_tc10_5)
+Algorithm terminated successfully (time: 10s 0ms, 42926 descriptions tested, 19070 nodes in the search tree).
+
+number of retrievals: 175868
+retrieval reasoning time: 27s 877ms ( 0ms per retrieval)
+number of instance checks: 125913 (42 multiple)
+instance check reasoning time: 161ms ( 0ms per instance check)
+(complex) subsumption checks: 263 (0 multiple)
+subsumption reasoning time: 49ms ( 0ms per subsumption check)
+overall reasoning time: 28s 88ms
+
+solutions:
+1: P_tc10_8 only (C_tc10_1 or C_tc10_5) (pred. acc.: 67.86%, F-measure: 75.68%)
+2: P_tc10_5 only (C_tc10_17 and (P_tc10_20 only C_tc10_7)) (pred. acc.: 67.86%, F-measure: 75.68%)
+3: P_tc10_5 only (C_tc10_17 and (P_tc10_20 only C_tc10_6)) (pred. acc.: 67.86%, F-measure: 75.68%)
+4: P_tc10_5 only (C_tc10_17 and (P_tc10_20 only C_tc10_5)) (pred. acc.: 67.86%, F-measure: 75.68%)
+5: P_tc10_5 only (C_tc10_17 and (P_tc10_20 only C_tc10_4)) (pred. acc.: 67.86%, F-measure: 75.68%)
+6: P_tc10_5 only (C_tc10_17 and (P_tc10_20 only C_tc10_3)) (pred. acc.: 67.86%, F-measure: 75.68%)
+7: P_tc10_5 only (C_tc10_17 and (P_tc10_20 only C_tc10_2)) (pred. acc.: 67.86%, F-measure: 75.68%)
+8: P_tc10_5 only (C_tc10_17 and (P_tc10_20 only C_tc10_19)) (pred. acc.: 67.86%, F-measure: 75.68%)
+9: P_tc10_5 only (C_tc10_17 and (P_tc10_20 only C_tc10_16)) (pred. acc.: 67.86%, F-measure: 75.68%)
+10: P_tc10_5 only (C_tc10_17 and (P_tc10_20 only C_tc10_14)) (pred. acc.: 67.86%, F-measure: 75.68%)
+
+1.0----0.07142857142857142
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_20]
+test set errors neg: []
+fold 3:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 1/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_8 only      (C_tc10_1 or C_tc10_5)
+  match: 75% (53.571% on training set)
+  commission: 25% (46.429% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_20]
+test set errors neg: []
+fold 3:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 1/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_8 only      (C_tc10_1 or C_tc10_5)
+  match: 75% (53.571% on training set)
+  commission: 25% (46.429% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (56.67%) class expression found after 12ms: P_tc10_5 only C_tc10_17
+more accurate (60.00%) class expression found after 16ms: P_tc10_29 only C_tc10_17
+more accurate (63.33%) class expression found after 405ms: C_tc10_8 and (P_tc10_28 some Thing) and (P_tc10_28 only (not (C_tc10_4)))
+more accurate (70.00%) class expression found after 6s66ms: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19))
+Algorithm terminated successfully (time: 10s 0ms, 46858 descriptions tested, 26246 nodes in the search tree).
+
+number of retrievals: 222801
+retrieval reasoning time: 34s 651ms ( 0ms per retrieval)
+number of instance checks: 159593 (56 multiple)
+instance check reasoning time: 204ms ( 0ms per instance check)
+(complex) subsumption checks: 307 (0 multiple)
+subsumption reasoning time: 52ms ( 0ms per subsumption check)
+overall reasoning time: 34s 909ms
+
+solutions:
+1: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_6)) (pred. acc.: 70.00%, F-measure: 76.92%)
+2: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_5)) (pred. acc.: 70.00%, F-measure: 76.92%)
+3: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_4)) (pred. acc.: 70.00%, F-measure: 76.92%)
+4: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_3)) (pred. acc.: 70.00%, F-measure: 76.92%)
+5: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_2)) (pred. acc.: 70.00%, F-measure: 76.92%)
+6: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19)) (pred. acc.: 70.00%, F-measure: 76.92%)
+7: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_16)) (pred. acc.: 70.00%, F-measure: 76.92%)
+8: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_13)) (pred. acc.: 70.00%, F-measure: 76.92%)
+9: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_12)) (pred. acc.: 70.00%, F-measure: 76.92%)
+10: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_11)) (pred. acc.: 70.00%, F-measure: 76.92%)
+
+0.0----0.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_16]
+test set errors neg: []
+fold 4:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_16]
+test set errors neg: []
+fold 4:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (57.14%) class expression found after 11ms: P_tc10_5 only C_tc10_17
+more accurate (60.71%) class expression found after 296ms: P_tc10_28 only (not (C_tc10_4))
+more accurate (64.29%) class expression found after 4s622ms: P_tc10_5 only (P_tc10_19 only C_tc10_19)
+more accurate (71.43%) class expression found after 5s942ms: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19))
+Algorithm terminated successfully (time: 10s 0ms, 47968 descriptions tested, 26444 nodes in the search tree).
+
+number of retrievals: 270847
+retrieval reasoning time: 41s 459ms ( 0ms per retrieval)
+number of instance checks: 187006 (70 multiple)
+instance check reasoning time: 238ms ( 0ms per instance check)
+(complex) subsumption checks: 343 (0 multiple)
+subsumption reasoning time: 56ms ( 0ms per subsumption check)
+overall reasoning time: 41s 755ms
+
+solutions:
+1: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_6)) (pred. acc.: 71.43%, F-measure: 77.78%)
+2: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_5)) (pred. acc.: 71.43%, F-measure: 77.78%)
+3: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_4)) (pred. acc.: 71.43%, F-measure: 77.78%)
+4: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_3)) (pred. acc.: 71.43%, F-measure: 77.78%)
+5: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_2)) (pred. acc.: 71.43%, F-measure: 77.78%)
+6: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19)) (pred. acc.: 71.43%, F-measure: 77.78%)
+7: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_16)) (pred. acc.: 71.43%, F-measure: 77.78%)
+8: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_13)) (pred. acc.: 71.43%, F-measure: 77.78%)
+9: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_12)) (pred. acc.: 71.43%, F-measure: 77.78%)
+10: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_11)) (pred. acc.: 71.43%, F-measure: 77.78%)
+
+0.0----0.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [I_tc10_121, EXTRA_I_FOR_CLASS_C_tc10_10_6]
+test set errors neg: []
+fold 5:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.006s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [I_tc10_121, EXTRA_I_FOR_CLASS_C_tc10_10_6]
+test set errors neg: []
+fold 5:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (57.14%) class expression found after 10ms: P_tc10_5 only C_tc10_17
+more accurate (60.71%) class expression found after 23ms: P_tc10_19 only C_tc10_3
+more accurate (64.29%) class expression found after 4s649ms: P_tc10_5 only (P_tc10_19 only C_tc10_19)
+more accurate (71.43%) class expression found after 6s109ms: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19))
+Algorithm terminated successfully (time: 10s 0ms, 42107 descriptions tested, 19888 nodes in the search tree).
+
+number of retrievals: 313054
+retrieval reasoning time: 48s 652ms ( 0ms per retrieval)
+number of instance checks: 218321 (84 multiple)
+instance check reasoning time: 279ms ( 0ms per instance check)
+(complex) subsumption checks: 445 (0 multiple)
+subsumption reasoning time: 61ms ( 0ms per subsumption check)
+overall reasoning time: 48s 994ms
+
+solutions:
+1: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_6)) (pred. acc.: 71.43%, F-measure: 77.78%)
+2: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_5)) (pred. acc.: 71.43%, F-measure: 77.78%)
+3: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_4)) (pred. acc.: 71.43%, F-measure: 77.78%)
+4: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_3)) (pred. acc.: 71.43%, F-measure: 77.78%)
+5: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_2)) (pred. acc.: 71.43%, F-measure: 77.78%)
+6: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19)) (pred. acc.: 71.43%, F-measure: 77.78%)
+7: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_16)) (pred. acc.: 71.43%, F-measure: 77.78%)
+8: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_13)) (pred. acc.: 71.43%, F-measure: 77.78%)
+9: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_12)) (pred. acc.: 71.43%, F-measure: 77.78%)
+10: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_11)) (pred. acc.: 71.43%, F-measure: 77.78%)
+
+0.0----0.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_0, I_tc10_232]
+test set errors neg: []
+fold 6:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.009s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_0, I_tc10_232]
+test set errors neg: []
+fold 6:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.009s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (56.67%) class expression found after 11ms: P_tc10_5 only C_tc10_17
+more accurate (60.00%) class expression found after 15ms: P_tc10_29 only C_tc10_17
+more accurate (63.33%) class expression found after 413ms: C_tc10_8 and (P_tc10_28 some Thing) and (P_tc10_28 only (not (C_tc10_4)))
+more accurate (73.33%) class expression found after 4s685ms: P_tc10_5 only (P_tc10_22 some Thing)
+more accurate (76.67%) class expression found after 4s696ms: P_tc10_5 only (P_tc10_22 some (not (C_tc10_11)))
+Algorithm terminated successfully (time: 10s 0ms, 42245 descriptions tested, 20651 nodes in the search tree).
+
+number of retrievals: 355372
+retrieval reasoning time: 55s 745ms ( 0ms per retrieval)
+number of instance checks: 253148 (98 multiple)
+instance check reasoning time: 321ms ( 0ms per instance check)
+(complex) subsumption checks: 467 (0 multiple)
+subsumption reasoning time: 63ms ( 0ms per subsumption check)
+overall reasoning time: 56s 131ms
+
+solutions:
+1: P_tc10_5 only (P_tc10_22 some (not (C_tc10_11))) (pred. acc.: 76.67%, F-measure: 81.08%)
+2: P_tc10_5 only (P_tc10_22 some (P_tc10_22 only Nothing)) (pred. acc.: 76.67%, F-measure: 81.08%)
+3: P_tc10_5 only (P_tc10_22 some (P_tc10_22 only C_tc10_6)) (pred. acc.: 76.67%, F-measure: 81.08%)
+4: P_tc10_5 only (P_tc10_22 some (P_tc10_22 only C_tc10_5)) (pred. acc.: 76.67%, F-measure: 81.08%)
+5: P_tc10_5 only (P_tc10_22 some (P_tc10_22 only C_tc10_4)) (pred. acc.: 76.67%, F-measure: 81.08%)
+6: P_tc10_5 only (P_tc10_22 some (P_tc10_22 only C_tc10_19)) (pred. acc.: 76.67%, F-measure: 81.08%)
+7: P_tc10_5 only (P_tc10_22 some (P_tc10_22 only C_tc10_18)) (pred. acc.: 76.67%, F-measure: 81.08%)
+8: P_tc10_5 only (P_tc10_22 some (P_tc10_22 only C_tc10_17)) (pred. acc.: 76.67%, F-measure: 81.08%)
+9: P_tc10_5 only (P_tc10_22 some (P_tc10_22 only C_tc10_15)) (pred. acc.: 76.67%, F-measure: 81.08%)
+10: P_tc10_5 only (P_tc10_22 some (P_tc10_22 only C_tc10_10)) (pred. acc.: 76.67%, F-measure: 81.08%)
+
+1.0----0.2
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_10]
+test set errors neg: []
+fold 7:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only (P_tc10_22 some (not (C_tc10_11)))
+  match: 50% (60% on training set)
+  commission: 50% (40% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.008s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_10]
+test set errors neg: []
+fold 7:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only (P_tc10_22 some (not (C_tc10_11)))
+  match: 50% (60% on training set)
+  commission: 50% (40% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.008s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (57.14%) class expression found after 11ms: P_tc10_5 only C_tc10_17
+more accurate (60.71%) class expression found after 15ms: P_tc10_29 only C_tc10_17
+more accurate (64.29%) class expression found after 4s662ms: P_tc10_5 only (P_tc10_19 only C_tc10_19)
+more accurate (71.43%) class expression found after 6s29ms: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19))
+Algorithm terminated successfully (time: 10s 0ms, 42623 descriptions tested, 19370 nodes in the search tree).
+
+number of retrievals: 398084
+retrieval reasoning time: 62s 915ms ( 0ms per retrieval)
+number of instance checks: 285866 (112 multiple)
+instance check reasoning time: 366ms ( 0ms per instance check)
+(complex) subsumption checks: 543 (0 multiple)
+subsumption reasoning time: 67ms ( 0ms per subsumption check)
+overall reasoning time: 63s 349ms
+
+solutions:
+1: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_6)) (pred. acc.: 71.43%, F-measure: 77.78%)
+2: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_5)) (pred. acc.: 71.43%, F-measure: 77.78%)
+3: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_4)) (pred. acc.: 71.43%, F-measure: 77.78%)
+4: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_3)) (pred. acc.: 71.43%, F-measure: 77.78%)
+5: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_2)) (pred. acc.: 71.43%, F-measure: 77.78%)
+6: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19)) (pred. acc.: 71.43%, F-measure: 77.78%)
+7: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_16)) (pred. acc.: 71.43%, F-measure: 77.78%)
+8: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_13)) (pred. acc.: 71.43%, F-measure: 77.78%)
+9: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_12)) (pred. acc.: 71.43%, F-measure: 77.78%)
+10: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_11)) (pred. acc.: 71.43%, F-measure: 77.78%)
+
+0.0----0.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [I_tc10_220, EXTRA_I_FOR_CLASS_C_tc10_10_4]
+test set errors neg: []
+fold 8:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_227, http://example.org/I_tc10_245, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [I_tc10_220, EXTRA_I_FOR_CLASS_C_tc10_10_4]
+test set errors neg: []
+fold 8:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (56.67%) class expression found after 11ms: P_tc10_5 only C_tc10_17
+more accurate (60.00%) class expression found after 15ms: P_tc10_29 only C_tc10_17
+more accurate (63.33%) class expression found after 25ms: P_tc10_19 only C_tc10_15
+more accurate (70.00%) class expression found after 6s126ms: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19))
+Algorithm terminated successfully (time: 10s 0ms, 46117 descriptions tested, 24642 nodes in the search tree).
+
+number of retrievals: 444306
+retrieval reasoning time: 69s 810ms ( 0ms per retrieval)
+number of instance checks: 320757 (126 multiple)
+instance check reasoning time: 410ms ( 0ms per instance check)
+(complex) subsumption checks: 671 (0 multiple)
+subsumption reasoning time: 74ms ( 0ms per subsumption check)
+overall reasoning time: 70s 296ms
+
+solutions:
+1: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_6)) (pred. acc.: 70.00%, F-measure: 76.92%)
+2: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_5)) (pred. acc.: 70.00%, F-measure: 76.92%)
+3: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_4)) (pred. acc.: 70.00%, F-measure: 76.92%)
+4: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_3)) (pred. acc.: 70.00%, F-measure: 76.92%)
+5: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_2)) (pred. acc.: 70.00%, F-measure: 76.92%)
+6: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_19)) (pred. acc.: 70.00%, F-measure: 76.92%)
+7: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_16)) (pred. acc.: 70.00%, F-measure: 76.92%)
+8: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_13)) (pred. acc.: 70.00%, F-measure: 76.92%)
+9: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_12)) (pred. acc.: 70.00%, F-measure: 76.92%)
+10: P_tc10_5 only (C_tc10_17 and (P_tc10_19 only C_tc10_11)) (pred. acc.: 70.00%, F-measure: 76.92%)
+
+0.0----0.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_11]
+test set errors neg: []
+fold 9:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.008s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_14, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_20, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_21, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_4, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_6, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_8, http://example.org/I_tc10_121, http://example.org/I_tc10_181, http://example.org/I_tc10_220, http://example.org/I_tc10_232, http://example.org/I_tc10_73]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc10_10_9, http://example.org/I_tc10_158, http://example.org/I_tc10_168, http://example.org/I_tc10_174, http://example.org/I_tc10_203, http://example.org/I_tc10_219, http://example.org/I_tc10_245, http://example.org/I_tc10_249, http://example.org/I_tc10_263, http://example.org/I_tc10_273, http://example.org/I_tc10_77, http://example.org/I_tc10_99]
+?[]
+test set errors pos: [EXTRA_I_FOR_CLASS_C_tc10_10_11]
+test set errors neg: []
+fold 9:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc10_5 only      (C_tc10_17      and (P_tc10_19 only C_tc10_6))
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.008s
+
+
+Finished 10-folds cross-validation.
+runtime: av. 10.007s (deviation 0.001s; min 10.006s; max 10.009s)
+length: av. 6.7 (deviation 0.675; min 5; max 7)
+F-Measure on training set: av. 7.25% (deviation 11.042%; min 0%; max 33.333%)
+F-Measure: av. 6.667% (deviation 21.082%; min 0%; max 66.667%)
+Match rate on training set: av. 51.714% (deviation 3.268%; min 50%; max 60%)
+Match rate: av. 52.5% (deviation 7.906%; min 50%; max 75%)
+Commission rate: av. 47.5% (deviation 7.906%; min 25%; max 50%)
+Omission rate: av. 0% (deviation 0%; min 0%; max 0%)
+Induction rate: av. 0% (deviation 0%; min 0%; max 0%)

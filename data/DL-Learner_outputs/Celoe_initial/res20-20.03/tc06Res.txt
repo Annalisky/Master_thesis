@@ -1,0 +1,46 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 1ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 0%[.....] 1%[.....] 2%[.....] 3%[.....] 4%[.....] 5%[.....] 5%[.....] 6%[.....] 7%[.....] 8%[.....] 9%[.....] 10%[.....] 10%[.....] 11%[.....] 12%[.....] 13%[.....] 14%[.....] 15%[.....] 15%[.....] 16%[.....] 17%[.....] 18%[.....] 19%[=....] 20%[=....] 20%[=....] 21%[=....] 22%[=....] 23%[=....] 24%[=....] 25%[=....] 25%[=....] 26%[=....] 27%[=....] 28%[=....] 29%[=....] 30%[=....] 30%[=....] 31%[=....] 32%materialising object properties ...
+[=....] 33%[=....] 34%[=....] 35%[=....] 35%[=....] 36%[=....] 37%[=....] 38%[=....] 39%[==...] 40%[==...] 40%[==...] 41%[==...] 42%[==...] 43%[==...] 44%[==...] 45%[==...] 45%[==...] 46%[==...] 47%[==...] 48%[==...] 49%[==...] 50%[==...] 50%[==...] 51%[==...] 52%[==...] 53%[==...] 54%[==...] 55%[==...] 55%[==...] 56%[==...] 57%[==...] 58%[==...] 59%[===..] 60%[===..] 60%[===..] 61%[===..] 62%[===..] 63%[===..] 64%[===..] 65%[===..] 65%[===..] 66%[===..] 67%[===..] 68%[===..] 69%[===..] 70%[===..] 70%[===..] 71%[===..] 72%[===..] 73%[===..] 74%[===..] 75%[===..] 75%[===..] 76%[===..] 77%[===..] 78%[===..] 79%[====.] 80%[====.] 80%[====.] 81%[====.] 82%[====.] 83%[====.] 84%[====.] 85%[====.] 85%[====.] 86%[====.] 87%[====.] 88%[====.] 89%[====.] 90%[====.] 90%[====.] 91%[====.] 92%[====.] 93%[====.] 94%[====.] 95%[====.] 95%[====.] 96%[====.] 97%[====.] 98%[====.] 99%materialising datatype properties
+...TBox materialised in 331 ms.
+... initialized component 'reasoner' in 1s 175ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 1ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 139ms. Status: OK
+Running algorithm instance "alg" (CELOE)
+start class:Thing
+more accurate (50.00%) class expression found after 31ms: Thing
+more accurate (53.12%) class expression found after 1s110ms: P_tc06_19 max 1 Thing
+more accurate (56.25%) class expression found after 1s236ms: C_tc06_3 or (not (C_tc06_38))
+more accurate (59.38%) class expression found after 2s67ms: P_tc06_15 only (not (C_tc06_31))
+more accurate (62.50%) class expression found after 2s118ms: P_tc06_66 only (not (C_tc06_4))
+more accurate (65.62%) class expression found after 2s128ms: P_tc06_66 some (not (C_tc06_7))
+more accurate (78.12%) class expression found after 2s553ms: P_tc06_66 some ((not (C_tc06_4)) and (not (C_tc06_7)))
+Algorithm terminated successfully (time: 10s 0ms, 32652 descriptions tested, 14108 nodes in the search tree).
+
+number of retrievals: 40337
+retrieval reasoning time: 5s 428ms ( 0ms per retrieval)
+number of instance checks: 4122 (0 multiple)
+instance check reasoning time: 12ms ( 0ms per instance check)
+(complex) subsumption checks: 68 (0 multiple)
+subsumption reasoning time: 26ms ( 0ms per subsumption check)
+overall reasoning time: 5s 470ms
+
+solutions:
+1: P_tc06_66 some ((not (C_tc06_4)) and (not (C_tc06_7))) (pred. acc.: 78.12%, F-measure: 82.05%)
+2: P_tc06_66 some ((not (C_tc06_19)) and (not (C_tc06_4))) (pred. acc.: 78.12%, F-measure: 82.05%)
+3: P_tc06_66 some ((not (C_tc06_1)) and (not (C_tc06_7))) (pred. acc.: 78.12%, F-measure: 82.05%)
+4: P_tc06_66 some ((not (C_tc06_1)) and (not (C_tc06_19))) (pred. acc.: 78.12%, F-measure: 82.05%)
+5: P_tc06_66 some (not (C_tc06_7)) (pred. acc.: 65.62%, F-measure: 74.42%)
+6: P_tc06_66 some (not (C_tc06_19)) (pred. acc.: 65.62%, F-measure: 74.42%)
+7: P_tc06_66 some (C_tc06_3 and (not (C_tc06_7))) (pred. acc.: 65.62%, F-measure: 74.42%)
+8: P_tc06_66 some (C_tc06_3 and (not (C_tc06_19))) (pred. acc.: 65.62%, F-measure: 74.42%)
+9: P_tc06_66 some (C_tc06_15 and (not (C_tc06_7))) (pred. acc.: 65.62%, F-measure: 74.42%)
+10: P_tc06_66 some (C_tc06_15 and (not (C_tc06_19))) (pred. acc.: 65.62%, F-measure: 74.42%)
+

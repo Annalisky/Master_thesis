@@ -1,0 +1,1929 @@
+,tc01,tc02,tc03,tc04,tc05,tc06,tc07,tc08,tc09,tc10,tc11,tc12
+0,"SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc01_61> ?s_1 . 
+?s_1 a <http://example.org/C_tc01_23> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_30> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc03_63> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_2 . 
+?s_2 ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?s_2 a <http://example.org/C_tc03_32> . 
+ }
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_5 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_5 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_6 ?s_7 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc03_63> ?s_8 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_26> . 
+ }
+?x ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_5> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_4> . 
+ }
+?s_1 ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_7> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc07_72> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_2 . 
+?s_2 a <http://example.org/C_tc07_16> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc07_72> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_8> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ SELECT ?x WHERE { 
+?x <http://example.org/P_tc09_49> ?s_1 . 
+?s_1 a <http://www.w3.org/2002/07/owl#Thing> . 
+ } GROUP BY ?x HAVING ( COUNT ( ?s_1 ) >= 2 ) }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc10_28> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc10_65> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_2 . 
+?s_2 a <http://example.org/C_tc10_20> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_65> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ SELECT ?x WHERE { 
+?x <http://example.org/P_tc11_20> ?s_1 . 
+?s_1 a <http://www.w3.org/2002/07/owl#Thing> . 
+ } GROUP BY ?x HAVING ( COUNT ( ?s_1 ) >= 2 ) }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }"
+1,"SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc01_3> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_2 . 
+?s_2 a <http://www.w3.org/2002/07/owl#Nothing> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc01_3> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_TC02_30> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_TC02_9> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc03_34> . 
+ }
+ UNION 
+{ 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_22> . 
+ }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_4> . 
+ }
+?x ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_5> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_33> . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_19> . 
+ }
+?s_1 ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_4> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc07_72> ?s_1 . 
+?s_1 a <http://example.org/C_tc07_16> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_6> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ SELECT ?x WHERE { 
+?x <http://example.org/P_tc09_49> ?s_1 . 
+?s_1 a <http://example.org/C_tc09_35> . 
+ } GROUP BY ?x HAVING ( COUNT ( ?s_1 ) >= 2 ) }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc10_28> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_tc10_9> . 
+{
+?x <http://example.org/P_tc10_65> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_2 . 
+?s_2 a <http://example.org/C_tc10_20> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_65> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ SELECT ?x WHERE { 
+?x <http://example.org/P_tc11_20> ?s_1 . 
+?s_1 a <http://example.org/C_tc11_32> . 
+ } GROUP BY ?x HAVING ( COUNT ( ?s_1 ) >= 2 ) }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc12_5> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }
+ }"
+2,"SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc01_3> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_2 . 
+?s_2 a <http://example.org/C_tc01_6> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc01_3> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_TC02_30> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_TC02_6> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc03_7> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc03_63> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_2 . 
+?s_2 a <http://example.org/C_tc03_36> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc03_63> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_26> . 
+ }
+?x ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_37> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_32> . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_1> . 
+ }
+?s_1 ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_7> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc07_72> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_2 . 
+?s_2 ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?s_2 a <http://example.org/C_tc07_38> . 
+ }
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_5 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_5 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_6 ?s_7 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc07_72> ?s_8 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_5> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc09_58> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc09_58> ?s_2 . 
+?s_2 a <http://example.org/C_tc09_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc09_58> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc09_58> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_tc10_9> . 
+{ 
+?x a <http://example.org/C_tc10_28> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc10_65> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_2 . 
+?s_2 a <http://example.org/C_tc10_20> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_65> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ SELECT ?x WHERE { 
+?x <http://example.org/P_tc11_20> ?s_1 . 
+?s_1 a <http://example.org/C_tc11_12> . 
+ } GROUP BY ?x HAVING ( COUNT ( ?s_1 ) >= 2 ) }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc12_34> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }
+ }"
+3,"SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc01_3> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_2 . 
+?s_2 a <http://example.org/C_tc01_4> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc01_3> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_TC02_30> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_TC02_38> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc03_16> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc03_63> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_2 . 
+?s_2 a <http://www.w3.org/2002/07/owl#Nothing> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc03_63> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_11> . 
+ }
+?x ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_5> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_29> . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_1> . 
+ }
+?s_1 ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_19> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc07_72> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc07_38> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_4> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc09_16> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc09_16> ?s_2 . 
+?s_2 a <http://example.org/C_tc09_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc09_16> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc09_16> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc10_65> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_2 . 
+?s_2 ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?s_2 a <http://example.org/C_tc10_18> . 
+ }
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_5 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_5 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_6 ?s_7 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_65> ?s_8 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc11_20> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc11_31> . 
+ }
+?s_1 ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc11_37> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc12_31> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }
+ }"
+4,"SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc01_3> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_2 . 
+?s_2 a <http://example.org/C_tc01_39> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc01_3> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_TC02_30> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_TC02_36> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc03_16> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc03_63> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_2 . 
+?s_2 a <http://example.org/C_tc03_36> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc03_63> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_5> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_13> . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_7> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc07_6> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc07_72> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_2 . 
+?s_2 a <http://example.org/C_tc07_16> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc07_72> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_30> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc09_16> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc09_16> ?s_2 . 
+?s_2 a <http://example.org/C_tc09_35> . 
+?s_2 a <http://example.org/C_tc09_36> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc09_16> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc09_16> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc10_39> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_39> ?s_2 . 
+?s_2 ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?s_2 a <http://example.org/C_tc10_21> . 
+ }
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_5 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_39> ?s_5 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_6 ?s_7 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_39> ?s_8 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc11_20> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc11_2> . 
+ }
+?s_1 ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc11_31> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc12_3> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }
+ }"
+5,"SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc01_3> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_2 . 
+?s_2 a <http://example.org/C_tc01_37> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc01_3> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_TC02_29> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_TC02_30> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc03_16> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc03_63> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_2 . 
+?s_2 a <http://example.org/C_tc03_3> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc03_63> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc04_30> . 
+ }
+ UNION 
+{ 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_5> . 
+ }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc05_39> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_19> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc07_5> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc07_72> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_2 . 
+?s_2 a <http://example.org/C_tc07_16> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc07_72> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_3> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc09_16> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc09_16> ?s_2 . 
+?s_2 a <http://example.org/C_tc09_17> . 
+?s_2 a <http://example.org/C_tc09_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc09_16> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc09_16> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc10_19> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_19> ?s_2 . 
+?s_2 ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?s_2 a <http://example.org/C_tc10_21> . 
+ }
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_5 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_19> ?s_5 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_6 ?s_7 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_19> ?s_8 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc11_20> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc11_13> . 
+ }
+?s_1 ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc11_31> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc12_28> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }
+ }"
+6,"SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc01_3> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_2 . 
+?s_2 a <http://example.org/C_tc01_27> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc01_3> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_TC02_27> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_TC02_30> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc03_16> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc03_63> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_2 . 
+?s_2 a <http://example.org/C_tc03_24> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc03_63> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc04_3> . 
+ }
+ UNION 
+{ 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_5> . 
+ }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc05_37> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 a <http://example.org/C_tc06_3> . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_7> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc07_38> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc07_72> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_2 . 
+?s_2 a <http://example.org/C_tc07_16> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc07_72> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_2> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc09_16> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc09_16> ?s_2 . 
+?s_2 a <http://example.org/C_tc09_13> . 
+?s_2 a <http://example.org/C_tc09_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc09_16> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc09_16> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc10_65> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_2 . 
+?s_2 a <http://example.org/C_tc10_31> . 
+?s_2 ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?s_2 a <http://example.org/C_tc10_18> . 
+ }
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_5 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_65> ?s_5 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_6 ?s_7 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_65> ?s_8 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc11_20> ?s_1 . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc11_31> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc12_22> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }
+ }"
+7,"SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc01_3> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_2 . 
+?s_2 a <http://example.org/C_tc01_2> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc01_3> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_TC02_19> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_TC02_30> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc03_16> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc03_63> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_2 . 
+?s_2 a <http://example.org/C_tc03_18> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc03_63> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc04_26> . 
+ }
+ UNION 
+{ 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_5> . 
+ }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc05_27> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 a <http://example.org/C_tc06_3> . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_19> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc07_26> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc07_72> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_2 . 
+?s_2 a <http://example.org/C_tc07_16> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc07_72> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_14> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc09_4> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc09_58> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc09_58> ?s_2 . 
+?s_2 a <http://example.org/C_tc09_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc09_58> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc09_58> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc10_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc10_18> . 
+?s_2 ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?s_2 a <http://example.org/C_tc10_19> . 
+ }
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_5 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_44> ?s_5 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_6 ?s_7 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_44> ?s_8 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc11_5> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc11_51> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc11_51> ?s_2 . 
+?s_2 a <http://example.org/C_tc11_32> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc11_51> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc11_51> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc12_21> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }
+ }"
+8,"SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc01_3> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_2 . 
+?s_2 a <http://example.org/C_tc01_19> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc01_3> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_TC02_14> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_TC02_30> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc03_16> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc03_63> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_2 . 
+?s_2 a <http://example.org/C_tc03_1> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc03_63> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc04_20> . 
+ }
+ UNION 
+{ 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_5> . 
+ }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc05_15> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 a <http://example.org/C_tc06_15> . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_7> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc07_2> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc07_72> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_2 . 
+?s_2 a <http://example.org/C_tc07_16> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc07_72> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_1> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc09_21> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc09_58> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc09_58> ?s_2 . 
+?s_2 a <http://example.org/C_tc09_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc09_58> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc09_58> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc10_39> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_39> ?s_2 . 
+?s_2 a <http://example.org/C_tc10_18> . 
+?s_2 ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?s_2 a <http://example.org/C_tc10_21> . 
+ }
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_5 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_39> ?s_5 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_6 ?s_7 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_39> ?s_8 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc11_20> ?s_1 . 
+?s_1 a <http://example.org/C_tc11_32> . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc11_31> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc12_18> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }
+ }"
+9,"SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc01_3> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_2 . 
+?s_2 a <http://example.org/C_tc01_18> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc01_3> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc01_3> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_TC02_12> . 
+ }
+ UNION 
+{ 
+?x a <http://example.org/C_TC02_30> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc03_13> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc03_63> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_2 . 
+?s_2 a <http://example.org/C_tc03_5> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc03_63> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc03_63> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc04_18> . 
+ }
+ UNION 
+{ 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc04_5> . 
+ }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc05_1> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc05_26> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_2 . 
+?s_2 a <http://example.org/C_tc05_35> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc05_26> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc05_26> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc06_66> ?s_1 . 
+?s_1 a <http://example.org/C_tc06_15> . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc06_19> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc07_16> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc07_72> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_2 . 
+?s_2 a <http://example.org/C_tc07_16> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc07_72> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc07_72> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc08_44> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_2 . 
+?s_2 a <http://example.org/C_tc08_0> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc08_44> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc08_44> ?s_6 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc09_11> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc09_58> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc09_58> ?s_2 . 
+?s_2 a <http://example.org/C_tc09_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc09_58> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc09_58> ?s_6 . 
+ } }
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{
+?x <http://example.org/P_tc10_28> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc10_28> ?s_2 . 
+?s_2 a <http://example.org/C_tc10_8> . 
+?s_2 ?s_3 ?s_4 . 
+FILTER NOT EXISTS { 
+?s_2 a <http://example.org/C_tc10_23> . 
+ }
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_5 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc10_28> ?s_5 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_6 ?s_7 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc10_28> ?s_8 . 
+ } }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc11_20> ?s_1 . 
+?s_1 a <http://example.org/C_tc11_12> . 
+?s_1 ?s_2 ?s_3 . 
+FILTER NOT EXISTS { 
+?s_1 a <http://example.org/C_tc11_31> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+{ 
+?x a <http://example.org/C_tc12_12> . 
+ }
+ UNION 
+{ 
+{
+?x <http://example.org/P_tc12_41> ?s_1 . 
+{ SELECT ?x ( COUNT( DISTINCT ?s_2 ) AS ?cnt_1 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_2 . 
+?s_2 a <http://example.org/C_tc12_13> . 
+ } GROUP BY ?x }
+{ SELECT ?x ( COUNT( DISTINCT ?s_3 ) AS ?cnt_2 ) WHERE { 
+?x <http://example.org/P_tc12_41> ?s_3 . 
+ } GROUP BY ?x }
+ FILTER( ?cnt_1 = ?cnt_2 )
+} UNION { 
+?x ?s_4 ?s_5 . 
+FILTER NOT EXISTS { 
+?x <http://example.org/P_tc12_41> ?s_6 . 
+ } }
+ }
+ }"

@@ -1,0 +1,616 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 0ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 93 ms.
+... initialized component 'reasoner' in 585ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 1ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 51ms. Status: OK
+start class:Thing
+more accurate (50.00%) class expression found after 22ms: Thing
+more accurate (51.39%) class expression found after 144ms: P_TC02_7 only C_TC02_10
+more accurate (52.78%) class expression found after 177ms: P_TC02_34 only C_TC02_2
+more accurate (56.94%) class expression found after 565ms: P_TC02_5 only (not (C_TC02_9))
+Algorithm terminated successfully (time: 10s 0ms, 42299 descriptions tested, 23364 nodes in the search tree).
+
+number of retrievals: 44382
+retrieval reasoning time: 4s 571ms ( 0ms per retrieval)
+number of instance checks: 68137 (0 multiple)
+instance check reasoning time: 77ms ( 0ms per instance check)
+(complex) subsumption checks: 54 (0 multiple)
+subsumption reasoning time: 21ms ( 0ms per subsumption check)
+overall reasoning time: 4s 670ms
+
+solutions:
+1: P_TC02_5 only (not (C_TC02_9)) (pred. acc.: 56.94%, F-measure: 69.90%)
+2: P_TC02_3 only (not (C_TC02_0)) (pred. acc.: 56.94%, F-measure: 69.90%)
+3: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7) (pred. acc.: 56.94%, F-measure: 69.90%)
+4: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_6) (pred. acc.: 56.94%, F-measure: 69.90%)
+5: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_5) (pred. acc.: 56.94%, F-measure: 69.90%)
+6: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2) (pred. acc.: 56.94%, F-measure: 69.90%)
+7: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_14) (pred. acc.: 56.94%, F-measure: 69.90%)
+8: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_0) (pred. acc.: 56.94%, F-measure: 69.90%)
+9: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+10: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+
+0.5384615384615384----0.3888888888888889
++[http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: [I_TC02_155, I_TC02_1, I_TC02_0]
+test set errors neg: []
+fold 0:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 1/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_TC02_5 only (not (C_TC02_9))
+  match: 62.5% (52.778% on training set)
+  commission: 37.5% (47.222% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.007s
+
++[http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: [I_TC02_155, I_TC02_1, I_TC02_0]
+test set errors neg: []
+fold 0:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 1/4 correct positives, 4/4 correct negatives 0/0 correct uncertain 
+  concept: P_TC02_5 only (not (C_TC02_9))
+  match: 62.5% (52.778% on training set)
+  commission: 37.5% (47.222% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (55.56%) class expression found after 3ms: not (C_TC02_11)
+Algorithm terminated successfully (time: 10s 0ms, 44809 descriptions tested, 24369 nodes in the search tree).
+
+number of retrievals: 89330
+retrieval reasoning time: 9s 257ms ( 0ms per retrieval)
+number of instance checks: 137126 (14 multiple)
+instance check reasoning time: 158ms ( 0ms per instance check)
+(complex) subsumption checks: 182 (0 multiple)
+subsumption reasoning time: 36ms ( 0ms per subsumption check)
+overall reasoning time: 9s 452ms
+
+solutions:
+1: not (C_TC02_11) (pred. acc.: 55.56%, F-measure: 69.23%)
+2: C_TC02_9 or (not (C_TC02_11)) (pred. acc.: 55.56%, F-measure: 69.23%)
+3: C_TC02_5 or (not (C_TC02_11)) (pred. acc.: 55.56%, F-measure: 69.23%)
+4: C_TC02_2 or (not (C_TC02_11)) (pred. acc.: 55.56%, F-measure: 69.23%)
+5: C_TC02_19 or (not (C_TC02_11)) (pred. acc.: 55.56%, F-measure: 69.23%)
+6: C_TC02_18 or (not (C_TC02_11)) (pred. acc.: 55.56%, F-measure: 69.23%)
+7: C_TC02_17 or (not (C_TC02_11)) (pred. acc.: 55.56%, F-measure: 69.23%)
+8: C_TC02_16 or (not (C_TC02_11)) (pred. acc.: 55.56%, F-measure: 69.23%)
+9: C_TC02_0 or (not (C_TC02_11)) (pred. acc.: 55.56%, F-measure: 69.23%)
+10: C_TC02_1 and (not (C_TC02_11)) (pred. acc.: 55.56%, F-measure: 69.23%)
+
+0.5294117647058824----1.0
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93]
+?[]
+test set errors pos: [I_TC02_131]
+test set errors neg: [I_TC02_220, I_TC02_27, I_TC02_95]
+fold 1:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 3/4 correct positives, 1/4 correct negatives 0/0 correct uncertain 
+  concept: not (C_TC02_11)
+  match: 50% (55.556% on training set)
+  commission: 50% (44.444% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 2
+  runtime: 10.006s
+
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93]
+?[]
+test set errors pos: [I_TC02_131]
+test set errors neg: [I_TC02_220, I_TC02_27, I_TC02_95]
+fold 1:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 3/4 correct positives, 1/4 correct negatives 0/0 correct uncertain 
+  concept: not (C_TC02_11)
+  match: 50% (55.556% on training set)
+  commission: 50% (44.444% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 2
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (51.39%) class expression found after 29ms: P_TC02_7 only C_TC02_10
+more accurate (52.78%) class expression found after 42ms: P_TC02_34 only C_TC02_2
+more accurate (54.17%) class expression found after 322ms: P_TC02_5 only (not (C_TC02_16))
+more accurate (56.94%) class expression found after 8s113ms: P_TC02_23 only (P_TC02_9 only C_TC02_3)
+Algorithm terminated successfully (time: 10s 0ms, 43046 descriptions tested, 23535 nodes in the search tree).
+
+number of retrievals: 132481
+retrieval reasoning time: 13s 909ms ( 0ms per retrieval)
+number of instance checks: 204746 (28 multiple)
+instance check reasoning time: 248ms ( 0ms per instance check)
+(complex) subsumption checks: 236 (0 multiple)
+subsumption reasoning time: 42ms ( 0ms per subsumption check)
+overall reasoning time: 14s 200ms
+
+solutions:
+1: P_TC02_23 only (P_TC02_9 only C_TC02_3) (pred. acc.: 56.94%, F-measure: 69.90%)
+2: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7) (pred. acc.: 56.94%, F-measure: 69.90%)
+3: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_6) (pred. acc.: 56.94%, F-measure: 69.90%)
+4: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_5) (pred. acc.: 56.94%, F-measure: 69.90%)
+5: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2) (pred. acc.: 56.94%, F-measure: 69.90%)
+6: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_14) (pred. acc.: 56.94%, F-measure: 69.90%)
+7: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_0) (pred. acc.: 56.94%, F-measure: 69.90%)
+8: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+9: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_2) (pred. acc.: 55.56%, F-measure: 69.23%)
+10: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+
+0.5555555555555556----0.1388888888888889
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: [I_TC02_240, I_TC02_152, I_TC02_188, I_TC02_72]
+test set errors neg: [I_TC02_92]
+fold 2:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 0/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_TC02_23 only (P_TC02_9 only C_TC02_3)
+  match: 37.5% (51.389% on training set)
+  commission: 62.5% (48.611% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: [I_TC02_240, I_TC02_152, I_TC02_188, I_TC02_72]
+test set errors neg: [I_TC02_92]
+fold 2:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 0/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_TC02_23 only (P_TC02_9 only C_TC02_3)
+  match: 37.5% (51.389% on training set)
+  commission: 62.5% (48.611% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (51.39%) class expression found after 27ms: P_TC02_7 only C_TC02_10
+more accurate (52.78%) class expression found after 64ms: P_TC02_19 only C_TC02_7
+more accurate (54.17%) class expression found after 342ms: P_TC02_5 only (not (C_TC02_16))
+more accurate (55.56%) class expression found after 5s225ms: C_TC02_2 or C_TC02_3 or C_TC02_4
+Algorithm terminated successfully (time: 10s 0ms, 42702 descriptions tested, 24058 nodes in the search tree).
+
+number of retrievals: 175288
+retrieval reasoning time: 18s 553ms ( 0ms per retrieval)
+number of instance checks: 274871 (42 multiple)
+instance check reasoning time: 337ms ( 0ms per instance check)
+(complex) subsumption checks: 246 (0 multiple)
+subsumption reasoning time: 42ms ( 0ms per subsumption check)
+overall reasoning time: 18s 934ms
+
+solutions:
+1: C_TC02_2 or C_TC02_3 or C_TC02_4 (pred. acc.: 55.56%, F-measure: 69.23%)
+2: P_TC02_5 only (not (C_TC02_16)) (pred. acc.: 54.17%, F-measure: 68.57%)
+3: P_TC02_37 only (not (C_TC02_11)) (pred. acc.: 54.17%, F-measure: 68.57%)
+4: P_TC02_3 only (not (C_TC02_17)) (pred. acc.: 54.17%, F-measure: 68.57%)
+5: P_TC02_28 only (not (C_TC02_11)) (pred. acc.: 54.17%, F-measure: 68.57%)
+6: P_TC02_23 only (not (C_TC02_12)) (pred. acc.: 54.17%, F-measure: 68.57%)
+7: P_TC02_23 only (not (C_TC02_0)) (pred. acc.: 54.17%, F-measure: 68.57%)
+8: P_TC02_5 only (P_TC02_33 only C_TC02_3) (pred. acc.: 54.17%, F-measure: 68.57%)
+9: P_TC02_5 only (P_TC02_33 only C_TC02_15) (pred. acc.: 54.17%, F-measure: 68.57%)
+10: (not (C_TC02_11)) or (not (C_TC02_3)) (pred. acc.: 54.17%, F-measure: 68.57%)
+
+0.5294117647058824----1.0
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_120, I_TC02_26, I_TC02_83, I_TC02_93]
+fold 3:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: C_TC02_2 or C_TC02_3 or C_TC02_4
+  match: 50% (55.556% on training set)
+  commission: 50% (44.444% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.004s
+
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_120, I_TC02_26, I_TC02_83, I_TC02_93]
+fold 3:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: C_TC02_2 or C_TC02_3 or C_TC02_4
+  match: 50% (55.556% on training set)
+  commission: 50% (44.444% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.004s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (52.78%) class expression found after 2ms: not (C_TC02_12)
+more accurate (54.17%) class expression found after 286ms: P_TC02_37 only (not (C_TC02_11))
+more accurate (55.56%) class expression found after 290ms: P_TC02_3 only (not (C_TC02_14))
+Algorithm terminated successfully (time: 10s 0ms, 45923 descriptions tested, 26372 nodes in the search tree).
+
+number of retrievals: 221349
+retrieval reasoning time: 22s 938ms ( 0ms per retrieval)
+number of instance checks: 339966 (56 multiple)
+instance check reasoning time: 428ms ( 0ms per instance check)
+(complex) subsumption checks: 314 (0 multiple)
+subsumption reasoning time: 51ms ( 0ms per subsumption check)
+overall reasoning time: 23s 418ms
+
+solutions:
+1: P_TC02_3 only (not (C_TC02_14)) (pred. acc.: 55.56%, F-measure: 69.23%)
+2: C_TC02_2 or C_TC02_3 or C_TC02_4 (pred. acc.: 55.56%, F-measure: 69.23%)
+3: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7) (pred. acc.: 55.56%, F-measure: 69.23%)
+4: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_6) (pred. acc.: 55.56%, F-measure: 69.23%)
+5: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_5) (pred. acc.: 55.56%, F-measure: 69.23%)
+6: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_2) (pred. acc.: 55.56%, F-measure: 69.23%)
+7: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2) (pred. acc.: 55.56%, F-measure: 69.23%)
+8: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_14) (pred. acc.: 55.56%, F-measure: 69.23%)
+9: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_0) (pred. acc.: 55.56%, F-measure: 69.23%)
+10: P_TC02_37 only (not (C_TC02_11)) (pred. acc.: 54.17%, F-measure: 68.57%)
+
+0.5555555555555556----0.2777777777777778
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_131, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_147, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: [I_TC02_140, I_TC02_2]
+test set errors neg: [I_TC02_206]
+fold 4:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 2/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_TC02_3 only (not (C_TC02_14))
+  match: 62.5% (52.778% on training set)
+  commission: 37.5% (47.222% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.006s
+
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_131, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_147, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: [I_TC02_140, I_TC02_2]
+test set errors neg: [I_TC02_206]
+fold 4:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 2/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_TC02_3 only (not (C_TC02_14))
+  match: 62.5% (52.778% on training set)
+  commission: 37.5% (47.222% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (51.39%) class expression found after 27ms: P_TC02_7 only C_TC02_10
+more accurate (52.78%) class expression found after 40ms: P_TC02_34 only C_TC02_2
+more accurate (54.17%) class expression found after 330ms: P_TC02_5 only (not (C_TC02_16))
+more accurate (55.56%) class expression found after 5s5ms: C_TC02_2 or C_TC02_3 or C_TC02_4
+more accurate (56.94%) class expression found after 8s901ms: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2)
+Algorithm terminated successfully (time: 10s 0ms, 42769 descriptions tested, 23083 nodes in the search tree).
+
+number of retrievals: 264219
+retrieval reasoning time: 27s 695ms ( 0ms per retrieval)
+number of instance checks: 408955 (70 multiple)
+instance check reasoning time: 513ms ( 0ms per instance check)
+(complex) subsumption checks: 376 (0 multiple)
+subsumption reasoning time: 55ms ( 0ms per subsumption check)
+overall reasoning time: 28s 265ms
+
+solutions:
+1: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7) (pred. acc.: 56.94%, F-measure: 69.90%)
+2: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_6) (pred. acc.: 56.94%, F-measure: 69.90%)
+3: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_5) (pred. acc.: 56.94%, F-measure: 69.90%)
+4: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2) (pred. acc.: 56.94%, F-measure: 69.90%)
+5: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_14) (pred. acc.: 56.94%, F-measure: 69.90%)
+6: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_0) (pred. acc.: 56.94%, F-measure: 69.90%)
+7: C_TC02_2 or C_TC02_3 or C_TC02_4 (pred. acc.: 55.56%, F-measure: 69.23%)
+8: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+9: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_2) (pred. acc.: 55.56%, F-measure: 69.23%)
+10: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+
+0.5373134328358209----1.0
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_109, I_TC02_132, I_TC02_168, I_TC02_241]
+fold 5:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7)
+  match: 50% (56.944% on training set)
+  commission: 50% (43.056% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.005s
+
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_109, I_TC02_132, I_TC02_168, I_TC02_241]
+fold 5:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7)
+  match: 50% (56.944% on training set)
+  commission: 50% (43.056% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.005s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (51.39%) class expression found after 25ms: P_TC02_7 only C_TC02_10
+more accurate (52.78%) class expression found after 36ms: P_TC02_34 only C_TC02_2
+more accurate (54.17%) class expression found after 321ms: P_TC02_5 only (not (C_TC02_16))
+more accurate (55.56%) class expression found after 5s50ms: C_TC02_2 or C_TC02_3 or C_TC02_4
+more accurate (58.33%) class expression found after 8s77ms: P_TC02_3 only (P_TC02_37 only C_TC02_3)
+Algorithm terminated successfully (time: 10s 0ms, 43099 descriptions tested, 23554 nodes in the search tree).
+
+number of retrievals: 307419
+retrieval reasoning time: 32s 397ms ( 0ms per retrieval)
+number of instance checks: 476283 (84 multiple)
+instance check reasoning time: 597ms ( 0ms per instance check)
+(complex) subsumption checks: 426 (0 multiple)
+subsumption reasoning time: 59ms ( 0ms per subsumption check)
+overall reasoning time: 33s 55ms
+
+solutions:
+1: P_TC02_3 only (P_TC02_37 only C_TC02_3) (pred. acc.: 58.33%, F-measure: 70.59%)
+2: C_TC02_2 or C_TC02_3 or C_TC02_4 (pred. acc.: 55.56%, F-measure: 69.23%)
+3: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7) (pred. acc.: 55.56%, F-measure: 69.23%)
+4: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+5: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_6) (pred. acc.: 55.56%, F-measure: 69.23%)
+6: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_5) (pred. acc.: 55.56%, F-measure: 69.23%)
+7: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2) (pred. acc.: 55.56%, F-measure: 69.23%)
+8: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_14) (pred. acc.: 55.56%, F-measure: 69.23%)
+9: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_0) (pred. acc.: 55.56%, F-measure: 69.23%)
+10: (not (C_TC02_11)) or (P_TC02_23 some C_TC02_2) (pred. acc.: 55.56%, F-measure: 69.23%)
+
+0.3333333333333333----0.027777777777777776
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_168, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: [I_TC02_164, I_TC02_50, I_TC02_29, I_TC02_217]
+test set errors neg: [I_TC02_13]
+fold 6:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 0/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_TC02_3 only (P_TC02_37 only C_TC02_3)
+  match: 37.5% (48.611% on training set)
+  commission: 62.5% (51.389% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_168, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: [I_TC02_164, I_TC02_50, I_TC02_29, I_TC02_217]
+test set errors neg: [I_TC02_13]
+fold 6:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 0/4 correct positives, 3/4 correct negatives 0/0 correct uncertain 
+  concept: P_TC02_3 only (P_TC02_37 only C_TC02_3)
+  match: 37.5% (48.611% on training set)
+  commission: 62.5% (51.389% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.005s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (51.39%) class expression found after 25ms: P_TC02_7 only C_TC02_10
+more accurate (52.78%) class expression found after 60ms: P_TC02_19 only C_TC02_7
+more accurate (54.17%) class expression found after 334ms: P_TC02_37 only (not (C_TC02_11))
+more accurate (55.56%) class expression found after 8s805ms: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_1)
+more accurate (56.94%) class expression found after 8s811ms: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2)
+Algorithm terminated successfully (time: 10s 0ms, 43236 descriptions tested, 23751 nodes in the search tree).
+
+number of retrievals: 350762
+retrieval reasoning time: 37s 107ms ( 0ms per retrieval)
+number of instance checks: 543647 (98 multiple)
+instance check reasoning time: 681ms ( 0ms per instance check)
+(complex) subsumption checks: 478 (0 multiple)
+subsumption reasoning time: 62ms ( 0ms per subsumption check)
+overall reasoning time: 37s 852ms
+
+solutions:
+1: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7) (pred. acc.: 56.94%, F-measure: 69.90%)
+2: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_6) (pred. acc.: 56.94%, F-measure: 69.90%)
+3: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_5) (pred. acc.: 56.94%, F-measure: 69.90%)
+4: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2) (pred. acc.: 56.94%, F-measure: 69.90%)
+5: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_14) (pred. acc.: 56.94%, F-measure: 69.90%)
+6: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_0) (pred. acc.: 56.94%, F-measure: 69.90%)
+7: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+8: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+9: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_2) (pred. acc.: 55.56%, F-measure: 69.23%)
+10: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+
+0.5373134328358209----1.0
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_61, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_111, I_TC02_218, I_TC02_24, I_TC02_39]
+fold 7:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7)
+  match: 50% (56.944% on training set)
+  commission: 50% (43.056% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.01s
+
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_61, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_37, http://example.org/I_TC02_38, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_111, I_TC02_218, I_TC02_24, I_TC02_39]
+fold 7:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7)
+  match: 50% (56.944% on training set)
+  commission: 50% (43.056% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.01s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (51.39%) class expression found after 2ms: not (C_TC02_13)
+more accurate (52.78%) class expression found after 35ms: P_TC02_34 only C_TC02_9
+more accurate (54.17%) class expression found after 361ms: P_TC02_5 only (not (C_TC02_16))
+more accurate (55.56%) class expression found after 4s927ms: C_TC02_2 or C_TC02_3 or C_TC02_4
+more accurate (56.94%) class expression found after 8s855ms: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2)
+Algorithm terminated successfully (time: 10s 0ms, 42438 descriptions tested, 23815 nodes in the search tree).
+
+number of retrievals: 393295
+retrieval reasoning time: 41s 742ms ( 0ms per retrieval)
+number of instance checks: 611333 (112 multiple)
+instance check reasoning time: 768ms ( 0ms per instance check)
+(complex) subsumption checks: 532 (0 multiple)
+subsumption reasoning time: 67ms ( 0ms per subsumption check)
+overall reasoning time: 42s 578ms
+
+solutions:
+1: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7) (pred. acc.: 56.94%, F-measure: 69.90%)
+2: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_6) (pred. acc.: 56.94%, F-measure: 69.90%)
+3: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_5) (pred. acc.: 56.94%, F-measure: 69.90%)
+4: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2) (pred. acc.: 56.94%, F-measure: 69.90%)
+5: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_14) (pred. acc.: 56.94%, F-measure: 69.90%)
+6: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_0) (pred. acc.: 56.94%, F-measure: 69.90%)
+7: C_TC02_2 or C_TC02_3 or C_TC02_4 (pred. acc.: 55.56%, F-measure: 69.23%)
+8: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+9: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_2) (pred. acc.: 55.56%, F-measure: 69.23%)
+10: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+
+0.5373134328358209----1.0
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_176, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_147, I_TC02_244, I_TC02_37, I_TC02_81]
+fold 8:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7)
+  match: 50% (56.944% on training set)
+  commission: 50% (43.056% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.005s
+
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_165, http://example.org/I_TC02_167, http://example.org/I_TC02_176, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_205, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_97]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_28, http://example.org/I_TC02_38, http://example.org/I_TC02_39, http://example.org/I_TC02_49, http://example.org/I_TC02_80, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_147, I_TC02_244, I_TC02_37, I_TC02_81]
+fold 8:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7)
+  match: 50% (56.944% on training set)
+  commission: 50% (43.056% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.005s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (51.39%) class expression found after 3ms: not (C_TC02_6)
+more accurate (52.78%) class expression found after 37ms: P_TC02_34 only C_TC02_2
+more accurate (54.17%) class expression found after 336ms: P_TC02_5 only (not (C_TC02_16))
+more accurate (55.56%) class expression found after 5s69ms: C_TC02_2 or C_TC02_3 or C_TC02_4
+more accurate (56.94%) class expression found after 9s83ms: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2)
+Algorithm terminated successfully (time: 10s 0ms, 42534 descriptions tested, 23072 nodes in the search tree).
+
+number of retrievals: 435932
+retrieval reasoning time: 46s 431ms ( 0ms per retrieval)
+number of instance checks: 678710 (126 multiple)
+instance check reasoning time: 856ms ( 0ms per instance check)
+(complex) subsumption checks: 586 (0 multiple)
+subsumption reasoning time: 70ms ( 0ms per subsumption check)
+overall reasoning time: 47s 358ms
+
+solutions:
+1: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7) (pred. acc.: 56.94%, F-measure: 69.90%)
+2: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_6) (pred. acc.: 56.94%, F-measure: 69.90%)
+3: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_5) (pred. acc.: 56.94%, F-measure: 69.90%)
+4: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_2) (pred. acc.: 56.94%, F-measure: 69.90%)
+5: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_14) (pred. acc.: 56.94%, F-measure: 69.90%)
+6: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_0) (pred. acc.: 56.94%, F-measure: 69.90%)
+7: C_TC02_2 or C_TC02_3 or C_TC02_4 (pred. acc.: 55.56%, F-measure: 69.23%)
+8: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+9: (not (C_TC02_11)) or (P_TC02_5 some C_TC02_2) (pred. acc.: 55.56%, F-measure: 69.23%)
+10: (not (C_TC02_11)) or (P_TC02_37 some C_TC02_3) (pred. acc.: 55.56%, F-measure: 69.23%)
+
+0.5373134328358209----1.0
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_37, http://example.org/I_TC02_39, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_28, I_TC02_38, I_TC02_49, I_TC02_80]
+fold 9:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7)
+  match: 50% (56.944% on training set)
+  commission: 50% (43.056% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.006s
+
++[http://example.org/I_TC02_0, http://example.org/I_TC02_1, http://example.org/I_TC02_108, http://example.org/I_TC02_131, http://example.org/I_TC02_140, http://example.org/I_TC02_141, http://example.org/I_TC02_143, http://example.org/I_TC02_152, http://example.org/I_TC02_153, http://example.org/I_TC02_155, http://example.org/I_TC02_164, http://example.org/I_TC02_17, http://example.org/I_TC02_176, http://example.org/I_TC02_177, http://example.org/I_TC02_179, http://example.org/I_TC02_18, http://example.org/I_TC02_188, http://example.org/I_TC02_189, http://example.org/I_TC02_19, http://example.org/I_TC02_2, http://example.org/I_TC02_208, http://example.org/I_TC02_209, http://example.org/I_TC02_217, http://example.org/I_TC02_229, http://example.org/I_TC02_240, http://example.org/I_TC02_29, http://example.org/I_TC02_50, http://example.org/I_TC02_60, http://example.org/I_TC02_61, http://example.org/I_TC02_62, http://example.org/I_TC02_71, http://example.org/I_TC02_72, http://example.org/I_TC02_73, http://example.org/I_TC02_84, http://example.org/I_TC02_85, http://example.org/I_TC02_96]
+-[http://example.org/I_TC02_109, http://example.org/I_TC02_111, http://example.org/I_TC02_12, http://example.org/I_TC02_120, http://example.org/I_TC02_123, http://example.org/I_TC02_13, http://example.org/I_TC02_132, http://example.org/I_TC02_135, http://example.org/I_TC02_14, http://example.org/I_TC02_144, http://example.org/I_TC02_147, http://example.org/I_TC02_15, http://example.org/I_TC02_156, http://example.org/I_TC02_159, http://example.org/I_TC02_16, http://example.org/I_TC02_168, http://example.org/I_TC02_190, http://example.org/I_TC02_191, http://example.org/I_TC02_206, http://example.org/I_TC02_218, http://example.org/I_TC02_220, http://example.org/I_TC02_232, http://example.org/I_TC02_24, http://example.org/I_TC02_241, http://example.org/I_TC02_244, http://example.org/I_TC02_25, http://example.org/I_TC02_26, http://example.org/I_TC02_27, http://example.org/I_TC02_37, http://example.org/I_TC02_39, http://example.org/I_TC02_81, http://example.org/I_TC02_83, http://example.org/I_TC02_91, http://example.org/I_TC02_92, http://example.org/I_TC02_93, http://example.org/I_TC02_95]
+?[]
+test set errors pos: []
+test set errors neg: [I_TC02_28, I_TC02_38, I_TC02_49, I_TC02_80]
+fold 9:
+  training: 36 positive, 36 negative examples and 0 uncertain examples  testing: 4/4 correct positives, 0/4 correct negatives 0/0 correct uncertain 
+  concept: (not (C_TC02_11)) or (P_TC02_9 some C_TC02_7)
+  match: 50% (56.944% on training set)
+  commission: 50% (43.056% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 6
+  runtime: 10.006s
+
+
+Finished 10-folds cross-validation.
+runtime: av. 10.006s (deviation 0.002s; min 10.004s; max 10.01s)
+length: av. 4.9 (deviation 1.287; min 2; max 6)
+F-Measure on training set: av. 52.762% (deviation 24.093%; min 5.128%; max 69.903%)
+F-Measure: av. 49.048% (deviation 27.143%; min 0%; max 66.667%)
+Match rate on training set: av. 54.444% (deviation 2.913%; min 48.611%; max 56.944%)
+Match rate: av. 50% (deviation 8.333%; min 37.5%; max 62.5%)
+Commission rate: av. 50% (deviation 8.333%; min 37.5%; max 62.5%)
+Omission rate: av. 0% (deviation 0%; min 0%; max 0%)
+Induction rate: av. 0% (deviation 0%; min 0%; max 0%)

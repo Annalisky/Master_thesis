@@ -1,0 +1,43 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 1ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 487 ms.
+... initialized component 'reasoner' in 2s 338ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 0ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 243ms. Status: OK
+Running algorithm instance "alg" (CELOE)
+start class:Thing
+more accurate (50.00%) class expression found after 80ms: Thing
+more accurate (53.12%) class expression found after 653ms: P_tc11_24 only C_tc11_8
+more accurate (62.50%) class expression found after 658ms: P_tc11_24 only C_tc11_5
+more accurate (100.00%) class expression found after 7s394ms: P_tc11_26 min 2 Thing
+Algorithm terminated successfully (time: 10s 4ms, 2485 descriptions tested, 1965 nodes in the search tree).
+
+number of retrievals: 3932
+retrieval reasoning time: 592ms ( 0ms per retrieval)
+number of instance checks: 1790 (0 multiple)
+instance check reasoning time: 17ms ( 0ms per instance check)
+(complex) subsumption checks: 46 (0 multiple)
+subsumption reasoning time: 41ms ( 0ms per subsumption check)
+overall reasoning time: 655ms
+
+solutions:
+1: P_tc11_26 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc11_26 min 2 C_tc11_9 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc11_24 only C_tc11_5 (pred. acc.: 62.50%, F-measure: 72.73%)
+4: P_tc11_24 only (C_tc11_5 and C_tc11_9) (pred. acc.: 62.50%, F-measure: 72.73%)
+5: P_tc11_24 only (C_tc11_5 and C_tc11_7) (pred. acc.: 62.50%, F-measure: 72.73%)
+6: P_tc11_24 only (C_tc11_5 and (not (C_tc11_15))) (pred. acc.: 62.50%, F-measure: 72.73%)
+7: P_tc11_24 only (C_tc11_5 and (not (C_tc11_14))) (pred. acc.: 62.50%, F-measure: 72.73%)
+8: P_tc11_24 only (C_tc11_5 and (not (C_tc11_12))) (pred. acc.: 62.50%, F-measure: 72.73%)
+9: P_tc11_24 only (C_tc11_5 and (not (C_tc11_1))) (pred. acc.: 62.50%, F-measure: 72.73%)
+10: P_tc11_24 only (C_tc11_5 and (not (C_tc11_0))) (pred. acc.: 62.50%, F-measure: 72.73%)
+

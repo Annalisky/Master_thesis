@@ -1,0 +1,654 @@
+,tc01,tc02,tc03,tc04,tc05,tc06,tc07,tc08,tc09,tc10,tc11,tc12
+0,"SELECT
+ DISTINCT ?x WHERE { 
+?x <http://example.org/P_tc01_885> ?s_1 . 
+?s_1 a <http://example.org/C_tc01_112> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_TC02_328> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_566> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc05_118> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_685> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc07_508> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_626> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_0> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc10_698> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_634> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_4> . 
+ }
+ }"
+1,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc01_714> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_TC02_632> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_421> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://www.w3.org/2002/07/owl#Thing> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_251> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc07_172> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_321> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_644> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc10_687> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_253> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_56> . 
+ }
+ }"
+2,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc01_293> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_TC02_547> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_567> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_tc05_430> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_244> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc07_727> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_513> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_406> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc10_564> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_709> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_34> . 
+ }
+ }"
+3,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc01_13> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_TC02_510> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_536> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc05_113> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_139> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc07_714> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_561> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_183> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc10_50> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_678> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_727> . 
+ }
+ }"
+4,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc01_716> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_TC02_13> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_478> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc05_110> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_467> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc07_607> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_516> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_16> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc10_417> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_595> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_703> . 
+ }
+ }"
+5,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc01_571> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_TC02_752> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_446> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc05_107> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_386> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc07_605> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_438> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_297> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc10_350> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_534> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_69> . 
+ }
+ }"
+6,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc01_51> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_TC02_523> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_279> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc05_106> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_268> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc07_548> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_294> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_277> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc10_201> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_515> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_555> . 
+ }
+ }"
+7,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc01_470> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_TC02_208> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_232> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc05_101> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_236> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://www.w3.org/2002/07/owl#Thing> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_232> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_274> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc10_164> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_441> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_547> . 
+ }
+ }"
+8,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc01_333> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_TC02_193> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_359> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc05_100> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_213> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_tc07_606> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_192> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_269> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://www.w3.org/2002/07/owl#Thing> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_428> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_522> . 
+ }
+ }"
+9,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc01_186> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_TC02_237> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc03_246> . 
+ }
+ }",noModel,"SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc05_1> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc06_165> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_tc07_281> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc08_159> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc09_214> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x a <http://example.org/C_tc10_589> . 
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc11_355> . 
+ }
+ }","SELECT
+ DISTINCT ?x WHERE { 
+?x ?s_1 ?s_2 . 
+FILTER NOT EXISTS { 
+?x a <http://example.org/C_tc12_52> . 
+ }
+ }"

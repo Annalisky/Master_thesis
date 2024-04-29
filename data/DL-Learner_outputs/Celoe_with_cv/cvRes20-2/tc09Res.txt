@@ -1,0 +1,604 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 1ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 109 ms.
+... initialized component 'reasoner' in 554ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 1ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 46ms. Status: OK
+start class:Thing
+more accurate (50.00%) class expression found after 28ms: Thing
+more accurate (53.57%) class expression found after 83ms: not (C_tc09_13)
+more accurate (100.00%) class expression found after 462ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 41286 descriptions tested, 19762 nodes in the search tree).
+
+number of retrievals: 43223
+retrieval reasoning time: 6s 787ms ( 0ms per retrieval)
+number of instance checks: 29904 (0 multiple)
+instance check reasoning time: 41ms ( 0ms per instance check)
+(complex) subsumption checks: 46 (0 multiple)
+subsumption reasoning time: 21ms ( 0ms per subsumption check)
+overall reasoning time: 6s 851ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (P_tc09_18 only C_tc09_6) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: (not (C_tc09_13)) and (P_tc09_9 some (P_tc09_18 only C_tc09_19)) (pred. acc.: 78.57%, F-measure: 82.35%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 0:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.005s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 0:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.005s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (53.57%) class expression found after 72ms: P_tc09_35 max 2 Thing
+more accurate (100.00%) class expression found after 138ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 46754 descriptions tested, 25307 nodes in the search tree).
+
+number of retrievals: 90093
+retrieval reasoning time: 13s 579ms ( 0ms per retrieval)
+number of instance checks: 59287 (14 multiple)
+instance check reasoning time: 80ms ( 0ms per instance check)
+(complex) subsumption checks: 78 (0 multiple)
+subsumption reasoning time: 28ms ( 0ms per subsumption check)
+overall reasoning time: 13s 688ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc09_9 min 2 (C_tc09_4 or C_tc09_5) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc09_9 min 2 (C_tc09_2 or C_tc09_4) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 1:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 1:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (53.33%) class expression found after 2ms: not (C_tc09_13)
+more accurate (56.67%) class expression found after 117ms: P_tc09_14 max 1 Thing
+more accurate (100.00%) class expression found after 132ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 48158 descriptions tested, 26454 nodes in the search tree).
+
+number of retrievals: 138327
+retrieval reasoning time: 20s 173ms ( 0ms per retrieval)
+number of instance checks: 91152 (28 multiple)
+instance check reasoning time: 122ms ( 0ms per instance check)
+(complex) subsumption checks: 122 (0 multiple)
+subsumption reasoning time: 33ms ( 0ms per subsumption check)
+overall reasoning time: 20s 330ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc09_9 min 2 (C_tc09_4 or C_tc09_5) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc09_9 min 2 (C_tc09_2 or C_tc09_4) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 2:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 2:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (53.57%) class expression found after 2ms: not (C_tc09_13)
+more accurate (60.71%) class expression found after 21ms: P_tc09_14 only C_tc09_6
+more accurate (100.00%) class expression found after 135ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 42419 descriptions tested, 18903 nodes in the search tree).
+
+number of retrievals: 180834
+retrieval reasoning time: 27s 449ms ( 0ms per retrieval)
+number of instance checks: 121510 (42 multiple)
+instance check reasoning time: 162ms ( 0ms per instance check)
+(complex) subsumption checks: 208 (0 multiple)
+subsumption reasoning time: 41ms ( 0ms per subsumption check)
+overall reasoning time: 27s 653ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc09_37 only (P_tc09_14 some (not (C_tc09_6))) (pred. acc.: 71.43%, F-measure: 77.78%)
+10: P_tc09_37 only (P_tc09_14 some (not (C_tc09_16))) (pred. acc.: 71.43%, F-measure: 77.78%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 3:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.003s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 3:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.003s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (53.33%) class expression found after 2ms: not (C_tc09_13)
+more accurate (63.33%) class expression found after 13ms: P_tc09_3 only C_tc09_9
+more accurate (100.00%) class expression found after 142ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 42970 descriptions tested, 18202 nodes in the search tree).
+
+number of retrievals: 223888
+retrieval reasoning time: 34s 599ms ( 0ms per retrieval)
+number of instance checks: 158453 (56 multiple)
+instance check reasoning time: 208ms ( 0ms per instance check)
+(complex) subsumption checks: 266 (0 multiple)
+subsumption reasoning time: 46ms ( 0ms per subsumption check)
+overall reasoning time: 34s 855ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_7)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_13)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 4:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 4:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (53.57%) class expression found after 2ms: not (C_tc09_13)
+more accurate (57.14%) class expression found after 111ms: P_tc09_14 max 1 Thing
+more accurate (100.00%) class expression found after 124ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 46884 descriptions tested, 24869 nodes in the search tree).
+
+number of retrievals: 270842
+retrieval reasoning time: 41s 479ms ( 0ms per retrieval)
+number of instance checks: 186416 (70 multiple)
+instance check reasoning time: 244ms ( 0ms per instance check)
+(complex) subsumption checks: 282 (0 multiple)
+subsumption reasoning time: 47ms ( 0ms per subsumption check)
+overall reasoning time: 41s 772ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc09_9 min 2 (C_tc09_4 or C_tc09_5) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc09_9 min 2 (C_tc09_2 or C_tc09_4) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 5:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.003s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 5:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.003s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (53.57%) class expression found after 2ms: not (C_tc09_13)
+more accurate (57.14%) class expression found after 24ms: P_tc09_15 only C_tc09_9
+more accurate (100.00%) class expression found after 133ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 44708 descriptions tested, 23361 nodes in the search tree).
+
+number of retrievals: 315618
+retrieval reasoning time: 48s 504ms ( 0ms per retrieval)
+number of instance checks: 216093 (84 multiple)
+instance check reasoning time: 281ms ( 0ms per instance check)
+(complex) subsumption checks: 304 (0 multiple)
+subsumption reasoning time: 49ms ( 0ms per subsumption check)
+overall reasoning time: 48s 835ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_14)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc09_37 only (P_tc09_14 some (P_tc09_3 only C_tc09_6)) (pred. acc.: 75.00%, F-measure: 80.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 6:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.003s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 6:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.003s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (53.33%) class expression found after 2ms: not (C_tc09_13)
+more accurate (56.67%) class expression found after 120ms: P_tc09_14 max 1 Thing
+more accurate (100.00%) class expression found after 135ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 49028 descriptions tested, 27609 nodes in the search tree).
+
+number of retrievals: 364725
+retrieval reasoning time: 54s 962ms ( 0ms per retrieval)
+number of instance checks: 247778 (98 multiple)
+instance check reasoning time: 322ms ( 0ms per instance check)
+(complex) subsumption checks: 350 (0 multiple)
+subsumption reasoning time: 52ms ( 0ms per subsumption check)
+overall reasoning time: 55s 338ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc09_9 min 2 (C_tc09_4 or C_tc09_5) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc09_9 min 2 (C_tc09_2 or C_tc09_4) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 7:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 7:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (53.57%) class expression found after 2ms: not (C_tc09_13)
+more accurate (60.71%) class expression found after 11ms: P_tc09_35 only C_tc09_6
+more accurate (100.00%) class expression found after 137ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 42290 descriptions tested, 20250 nodes in the search tree).
+
+number of retrievals: 407106
+retrieval reasoning time: 62s 155ms ( 0ms per retrieval)
+number of instance checks: 280061 (112 multiple)
+instance check reasoning time: 364ms ( 0ms per instance check)
+(complex) subsumption checks: 422 (0 multiple)
+subsumption reasoning time: 57ms ( 0ms per subsumption check)
+overall reasoning time: 62s 578ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: (not (C_tc09_13)) and (P_tc09_9 some (P_tc09_18 only C_tc09_19)) (pred. acc.: 78.57%, F-measure: 82.35%)
+10: (not (C_tc09_13)) and (P_tc09_9 some (P_tc09_18 only C_tc09_15)) (pred. acc.: 78.57%, F-measure: 82.35%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 8:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.003s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_201, http://example.org/I_tc09_206, http://example.org/I_tc09_80]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_104, http://example.org/I_tc09_121, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 8:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 2/2 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.003s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (53.33%) class expression found after 2ms: not (C_tc09_13)
+more accurate (56.67%) class expression found after 111ms: P_tc09_14 max 1 Thing
+more accurate (100.00%) class expression found after 125ms: P_tc09_9 min 2 C_tc09_4
+Algorithm terminated successfully (time: 10s 0ms, 48892 descriptions tested, 26957 nodes in the search tree).
+
+number of retrievals: 456077
+retrieval reasoning time: 68s 769ms ( 0ms per retrieval)
+number of instance checks: 311893 (126 multiple)
+instance check reasoning time: 406ms ( 0ms per instance check)
+(complex) subsumption checks: 466 (0 multiple)
+subsumption reasoning time: 59ms ( 0ms per subsumption check)
+overall reasoning time: 69s 237ms
+
+solutions:
+1: P_tc09_9 min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2: P_tc09_9 min 2 C_tc09_4 (pred. acc.: 100.00%, F-measure: 100.00%)
+3: P_tc09_9 min 2 (not (C_tc09_9)) (pred. acc.: 100.00%, F-measure: 100.00%)
+4: P_tc09_9 min 2 (not (C_tc09_2)) (pred. acc.: 100.00%, F-measure: 100.00%)
+5: P_tc09_9 min 2 (not (C_tc09_16)) (pred. acc.: 100.00%, F-measure: 100.00%)
+6: P_tc09_9 min 2 (not (C_tc09_11)) (pred. acc.: 100.00%, F-measure: 100.00%)
+7: P_tc09_9 min 2 (not (C_tc09_10)) (pred. acc.: 100.00%, F-measure: 100.00%)
+8: P_tc09_9 min 2 (P_tc09_15 only C_tc09_7) (pred. acc.: 100.00%, F-measure: 100.00%)
+9: P_tc09_9 min 2 (C_tc09_4 or C_tc09_5) (pred. acc.: 100.00%, F-measure: 100.00%)
+10: P_tc09_9 min 2 (C_tc09_2 or C_tc09_4) (pred. acc.: 100.00%, F-measure: 100.00%)
+
+1.0----1.0
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 9:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
++[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_1, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_11, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_13, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_16, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_18, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_7, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_9, http://example.org/I_tc09_124, http://example.org/I_tc09_129, http://example.org/I_tc09_139, http://example.org/I_tc09_150, http://example.org/I_tc09_180, http://example.org/I_tc09_206, http://example.org/I_tc09_80, http://example.org/I_tc09_9]
+-[http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_0, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_10, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_12, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_15, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_17, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_19, http://example.org/EXTRA_I_FOR_CLASS_C_tc09_1_20, http://example.org/I_tc09_1, http://example.org/I_tc09_104, http://example.org/I_tc09_203, http://example.org/I_tc09_237, http://example.org/I_tc09_31, http://example.org/I_tc09_35, http://example.org/I_tc09_37, http://example.org/I_tc09_8]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 9:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc09_9 min 2 Thing
+  match: 100% (100% on training set)
+  commission: 0% (0% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.002s
+
+
+Finished 10-folds cross-validation.
+runtime: av. 10.003s (deviation 0.001s; min 10.002s; max 10.005s)
+length: av. 4 (deviation 0; min 4; max 4)
+F-Measure on training set: av. 100% (deviation 0%; min 100%; max 100%)
+F-Measure: av. 100% (deviation 0%; min 100%; max 100%)
+Match rate on training set: av. 100% (deviation 0%; min 100%; max 100%)
+Match rate: av. 100% (deviation 0%; min 100%; max 100%)
+Commission rate: av. 0% (deviation 0%; min 0%; max 0%)
+Omission rate: av. 0% (deviation 0%; min 0%; max 0%)
+Induction rate: av. 0% (deviation 0%; min 0%; max 0%)

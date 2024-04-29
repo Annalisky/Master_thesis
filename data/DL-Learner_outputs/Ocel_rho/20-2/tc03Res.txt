@@ -1,0 +1,49 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 1ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 147 ms.
+... initialized component 'reasoner' in 988ms. Status: OK
+Initializing component 'op' of type rho refinement operator ...
+... initialized component 'op' in 70ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 0ms. Status: OK
+Initializing component 'alg' of type OWL Class Expression Learner ...
+... initialized component 'alg' in 4ms. Status: OK
+Running algorithm instance "alg" (OCEL)
+starting top down refinement with: Thing (50% accuracy)
+more accurate (55.00%) class expression found: not (C_tc03_9)
+more accurate (65.00%) class expression found: (not (C_tc03_1)) or (P_tc03_26 some Thing)
+more accurate (70.00%) class expression found: ((not (C_tc03_1)) and (not (C_tc03_5))) or (P_tc03_26 some Thing)
+more accurate (75.00%) class expression found: ((not (C_tc03_0)) and (not (C_tc03_1)) and (not (C_tc03_5))) or (P_tc03_26 some Thing)
+more accurate (77.50%) class expression found: ((not (C_tc03_0)) and (not (C_tc03_1)) and (not (C_tc03_19)) and (not (C_tc03_5))) or (P_tc03_26 some Thing)
+more accurate (100.00%) class expression found: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some Thing)
+Maximum time (300 seconds) reached, stopping now...
+solutions (at most 20 are shown):
+1: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some Thing) (accuracy 100%, length 11, depth 1)
+2: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (not (C_tc03_0)))) or (P_tc03_26 some Thing) (accuracy 100%, length 12, depth 1)
+3: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (not (C_tc03_13)))) or (P_tc03_26 some Thing) (accuracy 100%, length 12, depth 1)
+4: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (not (C_tc03_17)))) or (P_tc03_26 some Thing) (accuracy 100%, length 12, depth 1)
+5: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (not (C_tc03_4)))) or (P_tc03_26 some Thing) (accuracy 100%, length 12, depth 1)
+6: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (not (C_tc03_6)))) or (P_tc03_26 some Thing) (accuracy 100%, length 12, depth 1)
+7: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (not (C_tc03_8)))) or (P_tc03_26 some Thing) (accuracy 100%, length 12, depth 1)
+8: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (not (C_tc03_9)))) or (P_tc03_26 some Thing) (accuracy 100%, length 12, depth 1)
+9: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (P_tc03_26 some Thing))) or (P_tc03_26 some Thing) (accuracy 100%, length 13, depth 2)
+10: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some (not (C_tc03_0))) (accuracy 100%, length 12, depth 1)
+11: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some (not (C_tc03_1))) (accuracy 100%, length 12, depth 1)
+12: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some (not (C_tc03_17))) (accuracy 100%, length 12, depth 1)
+13: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some (not (C_tc03_18))) (accuracy 100%, length 12, depth 1)
+14: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some (not (C_tc03_19))) (accuracy 100%, length 12, depth 1)
+15: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some (not (C_tc03_2))) (accuracy 100%, length 12, depth 1)
+16: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some (not (C_tc03_5))) (accuracy 100%, length 12, depth 1)
+17: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some (not (C_tc03_8))) (accuracy 100%, length 12, depth 1)
+18: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some Thing)) or (P_tc03_26 some (not (C_tc03_9))) (accuracy 100%, length 12, depth 1)
+19: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (C_tc03_10 or C_tc03_11))) or (P_tc03_26 some Thing) (accuracy 100%, length 13, depth 1)
+20: ((not (C_tc03_1)) and ( inverse (P_tc03_26) some (P_tc03_0 only Thing))) or (P_tc03_26 some Thing) (accuracy 100%, length 13, depth 2)
+Algorithm stopped (463007 descriptions tested).
+

@@ -1,0 +1,47 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 0ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 526 ms.
+... initialized component 'reasoner' in 1s 586ms. Status: OK
+Initializing component 'op' of type rho refinement operator ...
+... initialized component 'op' in 100ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 0ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 2ms. Status: OK
+Running algorithm instance "alg" (CELOE)
+start class:Thing
+more accurate (50.00%) class expression found after 28ms: Thing
+more accurate (51.00%) class expression found after 498ms: P_tc10_5 only C_tc10_18
+more accurate (51.50%) class expression found after 1s54ms: P_tc10_10 only C_tc10_9
+more accurate (52.00%) class expression found after 3s365ms:  inverse (P_tc10_19) only (not (C_tc10_2))
+more accurate (54.00%) class expression found after 3s706ms:  inverse (P_tc10_29) some (not (C_tc10_0))
+more accurate (100.00%) class expression found after 1m29s254ms:  inverse (P_tc10_29) min 2 Thing
+Algorithm terminated successfully (time: 300s 1ms, 146641 descriptions tested, 104284 nodes in the search tree).
+
+number of retrievals: 148584
+retrieval reasoning time: 218s 67ms ( 1ms per retrieval)
+number of instance checks: 395518 (0 multiple)
+instance check reasoning time: 1s 47ms ( 0ms per instance check)
+(complex) subsumption checks: 4 (0 multiple)
+subsumption reasoning time: 12ms ( 3ms per subsumption check)
+overall reasoning time: 219s 128ms
+
+solutions:
+1:  inverse (P_tc10_29) min 2 Thing (pred. acc.: 100.00%, F-measure: 100.00%)
+2:  inverse (P_tc10_29) some (P_tc10_19 only (not (C_tc10_9))) (pred. acc.: 58.00%, F-measure: 70.42%)
+3:  inverse (P_tc10_29) some (P_tc10_19 only (not (C_tc10_19))) (pred. acc.: 56.50%, F-measure: 69.69%)
+4:  inverse (P_tc10_29) some (P_tc10_30 only (not (C_tc10_9))) (pred. acc.: 55.50%, F-measure: 69.20%)
+5:  inverse (P_tc10_29) some (P_tc10_19 only (not (C_tc10_10))) (pred. acc.: 55.50%, F-measure: 69.20%)
+6:  inverse (P_tc10_29) some (P_tc10_33 only C_tc10_7) (pred. acc.: 54.50%, F-measure: 68.73%)
+7:  inverse (P_tc10_29) some (P_tc10_33 only C_tc10_18) (pred. acc.: 54.50%, F-measure: 68.73%)
+8: C_tc10_9 or ( inverse (P_tc10_29) some (not (C_tc10_10))) (pred. acc.: 54.50%, F-measure: 68.73%)
+9:  inverse (P_tc10_29) some (not (C_tc10_0)) (pred. acc.: 54.00%, F-measure: 68.49%)
+10:  inverse (P_tc10_29) some (P_tc10_33 only C_tc10_19) (pred. acc.: 54.00%, F-measure: 68.49%)
+

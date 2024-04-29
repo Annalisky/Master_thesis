@@ -1,0 +1,42 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 4ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 240 ms.
+... initialized component 'reasoner' in 1s 80ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 1ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 88ms. Status: OK
+Running algorithm instance "alg" (CELOE)
+start class:Thing
+more accurate (50.00%) class expression found after 34ms: Thing
+more accurate (51.25%) class expression found after 685ms: P_tc08_25 max 1 C_tc08_8
+more accurate (52.50%) class expression found after 1s255ms: P_tc08_19 only (not (C_tc08_12))
+more accurate (53.75%) class expression found after 1s264ms: P_tc08_1 only (not (C_tc08_3))
+more accurate (55.00%) class expression found after 8s636ms: P_tc08_8 only (P_tc08_35 only C_tc08_4)
+Algorithm terminated successfully (time: 10s 0ms, 21832 descriptions tested, 7834 nodes in the search tree).
+
+number of retrievals: 23661
+retrieval reasoning time: 5s 154ms ( 0ms per retrieval)
+number of instance checks: 23330 (0 multiple)
+instance check reasoning time: 63ms ( 0ms per instance check)
+overall reasoning time: 5s 218ms
+
+solutions:
+1: P_tc08_8 only (P_tc08_35 only C_tc08_4) (pred. acc.: 55.00%, F-measure: 68.97%)
+2: P_tc08_1 only (not (C_tc08_3)) (pred. acc.: 53.75%, F-measure: 68.38%)
+3: P_tc08_19 only (P_tc08_7 only C_tc08_16) (pred. acc.: 53.75%, F-measure: 68.38%)
+4: P_tc08_19 only (not (C_tc08_12)) (pred. acc.: 52.50%, F-measure: 67.80%)
+5: P_tc08_8 only (P_tc08_7 only C_tc08_7) (pred. acc.: 52.50%, F-measure: 67.80%)
+6: P_tc08_8 only (P_tc08_7 only C_tc08_6) (pred. acc.: 52.50%, F-measure: 67.80%)
+7: P_tc08_8 only (P_tc08_7 only C_tc08_3) (pred. acc.: 52.50%, F-measure: 67.80%)
+8: P_tc08_8 only (P_tc08_7 only C_tc08_13) (pred. acc.: 52.50%, F-measure: 67.80%)
+9: P_tc08_8 only (P_tc08_7 only C_tc08_12) (pred. acc.: 52.50%, F-measure: 67.80%)
+10: P_tc08_8 only (P_tc08_7 only C_tc08_11) (pred. acc.: 52.50%, F-measure: 67.80%)
+

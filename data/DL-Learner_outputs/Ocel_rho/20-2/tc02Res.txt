@@ -1,0 +1,44 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 1ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 160 ms.
+... initialized component 'reasoner' in 757ms. Status: OK
+Initializing component 'op' of type rho refinement operator ...
+... initialized component 'op' in 72ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 1ms. Status: OK
+Initializing component 'alg' of type OWL Class Expression Learner ...
+... initialized component 'alg' in 4ms. Status: OK
+Running algorithm instance "alg" (OCEL)
+starting top down refinement with: Thing (50% accuracy)
+more accurate (100.00%) class expression found: C_TC02_7
+Maximum time (300 seconds) reached, stopping now...
+solutions (at most 20 are shown):
+1: C_TC02_3 (accuracy 100%, length 1, depth 0)
+2: C_TC02_7 (accuracy 100%, length 1, depth 0)
+3: C_TC02_1 and C_TC02_3 (accuracy 100%, length 3, depth 0)
+4: C_TC02_3 and (not (C_TC02_0)) (accuracy 100%, length 4, depth 0)
+5: C_TC02_3 and (not (C_TC02_11)) (accuracy 100%, length 4, depth 0)
+6: C_TC02_3 and (not (C_TC02_12)) (accuracy 100%, length 4, depth 0)
+7: C_TC02_3 and (not (C_TC02_13)) (accuracy 100%, length 4, depth 0)
+8: C_TC02_3 and (not (C_TC02_14)) (accuracy 100%, length 4, depth 0)
+9: C_TC02_3 and (not (C_TC02_15)) (accuracy 100%, length 4, depth 0)
+10: C_TC02_3 and (not (C_TC02_17)) (accuracy 100%, length 4, depth 0)
+11: C_TC02_3 and (not (C_TC02_18)) (accuracy 100%, length 4, depth 0)
+12: C_TC02_3 and (not (C_TC02_19)) (accuracy 100%, length 4, depth 0)
+13: C_TC02_3 and (not (C_TC02_5)) (accuracy 100%, length 4, depth 0)
+14: C_TC02_3 and (not (C_TC02_6)) (accuracy 100%, length 4, depth 0)
+15: C_TC02_3 and (not (C_TC02_9)) (accuracy 100%, length 4, depth 0)
+16: C_TC02_3 and (C_TC02_1 or C_TC02_1) (accuracy 100%, length 5, depth 0)
+17: C_TC02_3 and ( inverse (P_TC02_4) some Thing) (accuracy 100%, length 6, depth 1)
+18: C_TC02_3 and (C_TC02_1 or (not (C_TC02_0))) (accuracy 100%, length 6, depth 0)
+19: C_TC02_3 and (C_TC02_1 or (not (C_TC02_10))) (accuracy 100%, length 6, depth 0)
+20: C_TC02_3 and (C_TC02_1 or (not (C_TC02_11))) (accuracy 100%, length 6, depth 0)
+Algorithm stopped (726223 descriptions tested).
+

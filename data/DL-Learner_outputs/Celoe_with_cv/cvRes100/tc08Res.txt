@@ -1,0 +1,592 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 1ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 333 ms.
+... initialized component 'reasoner' in 1s 0ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 1ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 54ms. Status: OK
+start class:Thing
+more accurate (50.00%) class expression found after 19ms: Thing
+more accurate (52.08%) class expression found after 314ms: P_tc08_5 only C_tc08_6
+Algorithm terminated successfully (time: 10s 0ms, 9179 descriptions tested, 6333 nodes in the search tree).
+
+number of retrievals: 11206
+retrieval reasoning time: 7s 257ms ( 0ms per retrieval)
+number of instance checks: 3236 (0 multiple)
+instance check reasoning time: 6ms ( 0ms per instance check)
+overall reasoning time: 7s 264ms
+
+solutions:
+1: P_tc08_5 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+2: P_tc08_5 only C_tc08_6 (pred. acc.: 52.08%, F-measure: 67.61%)
+3: P_tc08_5 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+4: P_tc08_5 only C_tc08_16 (pred. acc.: 52.08%, F-measure: 67.61%)
+5: P_tc08_5 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+6: P_tc08_5 only C_tc08_13 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_5 only C_tc08_12 (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_5 only C_tc08_11 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_5 only C_tc08_10 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_5 only C_tc08_0 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.0----0.0
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_456, http://example.org/I_tc08_477, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_238, I_tc08_457, I_tc08_478, I_tc08_454, I_tc08_344, I_tc08_541, I_tc08_1267, I_tc08_1025]
+test set errors neg: []
+fold 0:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_5 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.012s
+
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_456, http://example.org/I_tc08_477, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_238, I_tc08_457, I_tc08_478, I_tc08_454, I_tc08_344, I_tc08_541, I_tc08_1267, I_tc08_1025]
+test set errors neg: []
+fold 0:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_5 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.012s
+
+start class:Thing
+more accurate (50.00%) class expression found after 1ms: Thing
+more accurate (51.39%) class expression found after 117ms: P_tc08_5 only C_tc08_6
+more accurate (52.08%) class expression found after 155ms: P_tc08_34 only C_tc08_14
+more accurate (52.78%) class expression found after 3s193ms: P_tc08_8 max 1 (not (C_tc08_6))
+Algorithm terminated successfully (time: 10s 1ms, 9446 descriptions tested, 6550 nodes in the search tree).
+
+number of retrievals: 20742
+retrieval reasoning time: 14s 813ms ( 0ms per retrieval)
+number of instance checks: 7178 (14 multiple)
+instance check reasoning time: 12ms ( 0ms per instance check)
+overall reasoning time: 14s 825ms
+
+solutions:
+1: P_tc08_8 max 1 (not (C_tc08_6)) (pred. acc.: 52.78%, F-measure: 67.92%)
+2: P_tc08_34 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+3: P_tc08_31 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+4: P_tc08_31 only C_tc08_3 (pred. acc.: 52.08%, F-measure: 67.61%)
+5: P_tc08_31 only C_tc08_18 (pred. acc.: 52.08%, F-measure: 67.61%)
+6: P_tc08_31 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_31 only C_tc08_15 (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_31 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_31 only C_tc08_12 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_31 only C_tc08_11 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.5267175572519084----0.9583333333333334
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_235]
+test set errors neg: [I_tc08_1029, I_tc08_1440, I_tc08_1489, I_tc08_542, I_tc08_568, I_tc08_677]
+fold 1:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 7/8 correct positives, 2/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_8 max 1 (not (C_tc08_6))
+  match: 56.25% (54.861% on training set)
+  commission: 43.75% (45.139% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.011s
+
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_235]
+test set errors neg: [I_tc08_1029, I_tc08_1440, I_tc08_1489, I_tc08_542, I_tc08_568, I_tc08_677]
+fold 1:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 7/8 correct positives, 2/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_8 max 1 (not (C_tc08_6))
+  match: 56.25% (54.861% on training set)
+  commission: 43.75% (45.139% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.011s
+
+start class:Thing
+more accurate (50.00%) class expression found after 1ms: Thing
+more accurate (51.39%) class expression found after 106ms: P_tc08_5 only C_tc08_6
+more accurate (52.08%) class expression found after 148ms: P_tc08_34 only C_tc08_14
+more accurate (52.78%) class expression found after 2s113ms: P_tc08_8 max 1 (not (C_tc08_14))
+more accurate (53.47%) class expression found after 9s908ms: C_tc08_8 or (P_tc08_2 only C_tc08_8)
+more accurate (56.25%) class expression found after 9s933ms: C_tc08_14 or (P_tc08_2 only C_tc08_8)
+Algorithm terminated successfully (time: 10s 0ms, 9267 descriptions tested, 6225 nodes in the search tree).
+
+number of retrievals: 30103
+retrieval reasoning time: 22s 421ms ( 0ms per retrieval)
+number of instance checks: 11182 (28 multiple)
+instance check reasoning time: 18ms ( 0ms per instance check)
+(complex) subsumption checks: 16 (0 multiple)
+subsumption reasoning time: 14ms ( 0ms per subsumption check)
+overall reasoning time: 22s 455ms
+
+solutions:
+1: C_tc08_4 or (P_tc08_2 only C_tc08_8) (pred. acc.: 56.25%, F-measure: 69.57%)
+2: C_tc08_14 or (P_tc08_2 only C_tc08_8) (pred. acc.: 56.25%, F-measure: 69.57%)
+3: C_tc08_8 or (P_tc08_2 only C_tc08_8) (pred. acc.: 53.47%, F-measure: 68.25%)
+4: P_tc08_8 max 1 (not (C_tc08_14)) (pred. acc.: 52.78%, F-measure: 67.92%)
+5: C_tc08_7 or (P_tc08_2 only C_tc08_8) (pred. acc.: 52.78%, F-measure: 67.92%)
+6: P_tc08_34 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_11 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_11 only C_tc08_18 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_11 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_11 only C_tc08_16 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.5----0.1111111111111111
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_1289, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_108, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_239, I_tc08_129, I_tc08_127, I_tc08_477, I_tc08_212, I_tc08_674, I_tc08_695, I_tc08_1134]
+test set errors neg: [I_tc08_1138, I_tc08_676]
+fold 2:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 6/8 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_4 or (P_tc08_2 only C_tc08_8)
+  match: 37.5% (50% on training set)
+  commission: 62.5% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.022s
+
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_1289, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_108, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_239, I_tc08_129, I_tc08_127, I_tc08_477, I_tc08_212, I_tc08_674, I_tc08_695, I_tc08_1134]
+test set errors neg: [I_tc08_1138, I_tc08_676]
+fold 2:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 6/8 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_4 or (P_tc08_2 only C_tc08_8)
+  match: 37.5% (50% on training set)
+  commission: 62.5% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.022s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (52.08%) class expression found after 107ms: P_tc08_5 only C_tc08_6
+more accurate (54.17%) class expression found after 940ms: C_tc08_5 or (not (C_tc08_3))
+Algorithm terminated successfully (time: 10s 0ms, 9547 descriptions tested, 6646 nodes in the search tree).
+
+number of retrievals: 39740
+retrieval reasoning time: 29s 967ms ( 0ms per retrieval)
+number of instance checks: 15412 (42 multiple)
+instance check reasoning time: 25ms ( 0ms per instance check)
+(complex) subsumption checks: 24 (0 multiple)
+subsumption reasoning time: 15ms ( 0ms per subsumption check)
+overall reasoning time: 30s 9ms
+
+solutions:
+1: C_tc08_5 or (not (C_tc08_3)) (pred. acc.: 54.17%, F-measure: 68.57%)
+2: C_tc08_5 or (not (C_tc08_2)) (pred. acc.: 54.17%, F-measure: 68.57%)
+3: P_tc08_5 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+4: P_tc08_5 only C_tc08_6 (pred. acc.: 52.08%, F-measure: 67.61%)
+5: P_tc08_5 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+6: P_tc08_5 only C_tc08_16 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_5 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_5 only C_tc08_13 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_5 only C_tc08_12 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_5 only C_tc08_11 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.5217391304347826----1.0
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_587, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_214]
+test set errors neg: [I_tc08_1004, I_tc08_1005, I_tc08_1137, I_tc08_1246, I_tc08_434, I_tc08_437, I_tc08_543, I_tc08_897]
+fold 3:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 7/8 correct positives, 0/8 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or (not (C_tc08_3))
+  match: 43.75% (54.167% on training set)
+  commission: 56.25% (45.833% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.012s
+
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_587, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_214]
+test set errors neg: [I_tc08_1004, I_tc08_1005, I_tc08_1137, I_tc08_1246, I_tc08_434, I_tc08_437, I_tc08_543, I_tc08_897]
+fold 3:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 7/8 correct positives, 0/8 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or (not (C_tc08_3))
+  match: 43.75% (54.167% on training set)
+  commission: 56.25% (45.833% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.012s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (52.08%) class expression found after 105ms: P_tc08_5 only C_tc08_6
+Algorithm terminated successfully (time: 10s 0ms, 9861 descriptions tested, 7093 nodes in the search tree).
+
+number of retrievals: 49680
+retrieval reasoning time: 37s 433ms ( 0ms per retrieval)
+number of instance checks: 19838 (56 multiple)
+instance check reasoning time: 32ms ( 0ms per instance check)
+(complex) subsumption checks: 24 (0 multiple)
+subsumption reasoning time: 15ms ( 0ms per subsumption check)
+overall reasoning time: 37s 481ms
+
+solutions:
+1: P_tc08_5 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+2: P_tc08_5 only C_tc08_6 (pred. acc.: 52.08%, F-measure: 67.61%)
+3: P_tc08_5 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+4: P_tc08_5 only C_tc08_16 (pred. acc.: 52.08%, F-measure: 67.61%)
+5: P_tc08_5 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+6: P_tc08_5 only C_tc08_13 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_5 only C_tc08_12 (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_5 only C_tc08_11 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_5 only C_tc08_10 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_5 only C_tc08_0 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.0----0.0
++[http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_586, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980]
+?[]
+test set errors pos: [I_tc08_699, I_tc08_369, I_tc08_1460, I_tc08_236, I_tc08_566, I_tc08_587, I_tc08_1000, I_tc08_453]
+test set errors neg: []
+fold 4:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_5 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.008s
+
++[http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_586, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980]
+?[]
+test set errors pos: [I_tc08_699, I_tc08_369, I_tc08_1460, I_tc08_236, I_tc08_566, I_tc08_587, I_tc08_1000, I_tc08_453]
+test set errors neg: []
+fold 4:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_5 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.008s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (51.39%) class expression found after 101ms: P_tc08_5 only C_tc08_6
+more accurate (52.08%) class expression found after 140ms: P_tc08_34 only C_tc08_6
+Algorithm terminated successfully (time: 10s 1ms, 9616 descriptions tested, 6895 nodes in the search tree).
+
+number of retrievals: 59403
+retrieval reasoning time: 45s 14ms ( 0ms per retrieval)
+number of instance checks: 23988 (70 multiple)
+instance check reasoning time: 37ms ( 0ms per instance check)
+(complex) subsumption checks: 24 (0 multiple)
+subsumption reasoning time: 15ms ( 0ms per subsumption check)
+overall reasoning time: 45s 69ms
+
+solutions:
+1: P_tc08_34 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+2: P_tc08_34 only C_tc08_6 (pred. acc.: 52.08%, F-measure: 67.61%)
+3: P_tc08_34 only C_tc08_3 (pred. acc.: 52.08%, F-measure: 67.61%)
+4: P_tc08_34 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+5: P_tc08_34 only C_tc08_16 (pred. acc.: 52.08%, F-measure: 67.61%)
+6: P_tc08_34 only C_tc08_15 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_34 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_34 only C_tc08_13 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_34 only C_tc08_12 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_34 only C_tc08_10 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.0----0.0
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1246, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_106, I_tc08_324, I_tc08_1242, I_tc08_565, I_tc08_1352, I_tc08_1243, I_tc08_1399, I_tc08_650]
+test set errors neg: []
+fold 5:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_34 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.009s
+
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1246, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_106, I_tc08_324, I_tc08_1242, I_tc08_565, I_tc08_1352, I_tc08_1243, I_tc08_1399, I_tc08_650]
+test set errors neg: []
+fold 5:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_34 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.009s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (52.08%) class expression found after 88ms: P_tc08_5 only C_tc08_6
+more accurate (52.78%) class expression found after 1s377ms: P_tc08_1 only (not (C_tc08_18))
+Algorithm terminated successfully (time: 10s 1ms, 9629 descriptions tested, 6747 nodes in the search tree).
+
+number of retrievals: 69107
+retrieval reasoning time: 52s 568ms ( 0ms per retrieval)
+number of instance checks: 28438 (84 multiple)
+instance check reasoning time: 43ms ( 0ms per instance check)
+(complex) subsumption checks: 24 (0 multiple)
+subsumption reasoning time: 15ms ( 0ms per subsumption check)
+overall reasoning time: 52s 628ms
+
+solutions:
+1: P_tc08_1 only (not (C_tc08_18)) (pred. acc.: 52.78%, F-measure: 67.92%)
+2: P_tc08_5 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+3: P_tc08_5 only C_tc08_6 (pred. acc.: 52.08%, F-measure: 67.61%)
+4: P_tc08_5 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+5: P_tc08_5 only C_tc08_16 (pred. acc.: 52.08%, F-measure: 67.61%)
+6: P_tc08_5 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_5 only C_tc08_13 (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_5 only C_tc08_12 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_5 only C_tc08_11 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_5 only C_tc08_10 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.48----0.3333333333333333
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_890]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1355, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_1049, I_tc08_348, I_tc08_1353, I_tc08_783, I_tc08_671, I_tc08_1048]
+test set errors neg: [I_tc08_1139, I_tc08_300]
+fold 6:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 2/8 correct positives, 6/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_1 only (not (C_tc08_18))
+  match: 50% (48.611% on training set)
+  commission: 50% (51.389% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.011s
+
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_890]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1355, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_1049, I_tc08_348, I_tc08_1353, I_tc08_783, I_tc08_671, I_tc08_1048]
+test set errors neg: [I_tc08_1139, I_tc08_300]
+fold 6:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 2/8 correct positives, 6/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_1 only (not (C_tc08_18))
+  match: 50% (48.611% on training set)
+  commission: 50% (51.389% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.011s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (52.08%) class expression found after 106ms: P_tc08_5 only C_tc08_6
+Algorithm terminated successfully (time: 10s 1ms, 9472 descriptions tested, 6602 nodes in the search tree).
+
+number of retrievals: 78657
+retrieval reasoning time: 60s 144ms ( 0ms per retrieval)
+number of instance checks: 32594 (98 multiple)
+instance check reasoning time: 50ms ( 0ms per instance check)
+(complex) subsumption checks: 24 (0 multiple)
+subsumption reasoning time: 15ms ( 0ms per subsumption check)
+overall reasoning time: 60s 211ms
+
+solutions:
+1: P_tc08_5 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+2: P_tc08_5 only C_tc08_6 (pred. acc.: 52.08%, F-measure: 67.61%)
+3: P_tc08_5 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+4: P_tc08_5 only C_tc08_16 (pred. acc.: 52.08%, F-measure: 67.61%)
+5: P_tc08_5 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+6: P_tc08_5 only C_tc08_13 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_5 only C_tc08_12 (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_5 only C_tc08_11 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_5 only C_tc08_10 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_5 only C_tc08_0 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.0----0.0
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_698, I_tc08_1462, I_tc08_1110, I_tc08_1156, I_tc08_211, I_tc08_430, I_tc08_1289, I_tc08_781]
+test set errors neg: []
+fold 7:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_5 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.01s
+
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_698, I_tc08_1462, I_tc08_1110, I_tc08_1156, I_tc08_211, I_tc08_430, I_tc08_1289, I_tc08_781]
+test set errors neg: []
+fold 7:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_5 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.01s
+
+start class:Thing
+more accurate (50.00%) class expression found after 1ms: Thing
+more accurate (52.08%) class expression found after 105ms: P_tc08_5 only C_tc08_6
+Algorithm terminated successfully (time: 10s 0ms, 9664 descriptions tested, 6791 nodes in the search tree).
+
+number of retrievals: 88400
+retrieval reasoning time: 67s 658ms ( 0ms per retrieval)
+number of instance checks: 36936 (112 multiple)
+instance check reasoning time: 56ms ( 0ms per instance check)
+(complex) subsumption checks: 24 (0 multiple)
+subsumption reasoning time: 15ms ( 0ms per subsumption check)
+overall reasoning time: 67s 732ms
+
+solutions:
+1: P_tc08_5 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+2: P_tc08_5 only C_tc08_6 (pred. acc.: 52.08%, F-measure: 67.61%)
+3: P_tc08_5 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+4: P_tc08_5 only C_tc08_16 (pred. acc.: 52.08%, F-measure: 67.61%)
+5: P_tc08_5 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+6: P_tc08_5 only C_tc08_13 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_5 only C_tc08_12 (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_5 only C_tc08_11 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_5 only C_tc08_10 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_5 only C_tc08_0 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.0----0.0
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_347, I_tc08_215, I_tc08_103, I_tc08_345, I_tc08_432, I_tc08_1398, I_tc08_1376, I_tc08_19]
+test set errors neg: []
+fold 8:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_5 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.007s
+
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1024, http://example.org/I_tc08_1025, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1133, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1157, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1351, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1375, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_456, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_780, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_890, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1028, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_108, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1355, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_216, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_301, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_522, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_567, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_896, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_347, I_tc08_215, I_tc08_103, I_tc08_345, I_tc08_432, I_tc08_1398, I_tc08_1376, I_tc08_19]
+test set errors neg: []
+fold 8:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_5 only Nothing
+  match: 50% (50% on training set)
+  commission: 50% (50% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 3
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 1ms: Thing
+more accurate (52.08%) class expression found after 102ms: P_tc08_5 only C_tc08_6
+more accurate (52.78%) class expression found after 1s612ms: P_tc08_13 only (not (C_tc08_16))
+Algorithm terminated successfully (time: 10s 0ms, 9441 descriptions tested, 6662 nodes in the search tree).
+
+number of retrievals: 97921
+retrieval reasoning time: 75s 199ms ( 0ms per retrieval)
+number of instance checks: 40818 (126 multiple)
+instance check reasoning time: 61ms ( 0ms per instance check)
+(complex) subsumption checks: 24 (0 multiple)
+subsumption reasoning time: 15ms ( 0ms per subsumption check)
+overall reasoning time: 75s 277ms
+
+solutions:
+1: P_tc08_13 only (not (C_tc08_16)) (pred. acc.: 52.78%, F-measure: 67.92%)
+2: P_tc08_5 only Nothing (pred. acc.: 52.08%, F-measure: 67.61%)
+3: P_tc08_5 only C_tc08_6 (pred. acc.: 52.08%, F-measure: 67.61%)
+4: P_tc08_5 only C_tc08_17 (pred. acc.: 52.08%, F-measure: 67.61%)
+5: P_tc08_5 only C_tc08_16 (pred. acc.: 52.08%, F-measure: 67.61%)
+6: P_tc08_5 only C_tc08_14 (pred. acc.: 52.08%, F-measure: 67.61%)
+7: P_tc08_5 only C_tc08_13 (pred. acc.: 52.08%, F-measure: 67.61%)
+8: P_tc08_5 only C_tc08_12 (pred. acc.: 52.08%, F-measure: 67.61%)
+9: P_tc08_5 only C_tc08_11 (pred. acc.: 52.08%, F-measure: 67.61%)
+10: P_tc08_5 only C_tc08_10 (pred. acc.: 52.08%, F-measure: 67.61%)
+
+0.875----0.09722222222222222
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_780, I_tc08_890, I_tc08_456, I_tc08_1351, I_tc08_1133, I_tc08_1375, I_tc08_1024, I_tc08_1157]
+test set errors neg: []
+fold 9:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_13 only (not (C_tc08_16))
+  match: 50% (54.167% on training set)
+  commission: 50% (45.833% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.009s
+
++[http://example.org/I_tc08_1000, http://example.org/I_tc08_1001, http://example.org/I_tc08_102, http://example.org/I_tc08_1025, http://example.org/I_tc08_103, http://example.org/I_tc08_1048, http://example.org/I_tc08_1049, http://example.org/I_tc08_105, http://example.org/I_tc08_106, http://example.org/I_tc08_1110, http://example.org/I_tc08_1134, http://example.org/I_tc08_1156, http://example.org/I_tc08_1158, http://example.org/I_tc08_1242, http://example.org/I_tc08_1243, http://example.org/I_tc08_1266, http://example.org/I_tc08_1267, http://example.org/I_tc08_127, http://example.org/I_tc08_1289, http://example.org/I_tc08_129, http://example.org/I_tc08_1352, http://example.org/I_tc08_1353, http://example.org/I_tc08_1376, http://example.org/I_tc08_1398, http://example.org/I_tc08_1399, http://example.org/I_tc08_1460, http://example.org/I_tc08_1461, http://example.org/I_tc08_1462, http://example.org/I_tc08_1484, http://example.org/I_tc08_1485, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_212, http://example.org/I_tc08_214, http://example.org/I_tc08_215, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_238, http://example.org/I_tc08_239, http://example.org/I_tc08_320, http://example.org/I_tc08_323, http://example.org/I_tc08_324, http://example.org/I_tc08_344, http://example.org/I_tc08_345, http://example.org/I_tc08_347, http://example.org/I_tc08_348, http://example.org/I_tc08_369, http://example.org/I_tc08_430, http://example.org/I_tc08_432, http://example.org/I_tc08_453, http://example.org/I_tc08_454, http://example.org/I_tc08_457, http://example.org/I_tc08_477, http://example.org/I_tc08_478, http://example.org/I_tc08_541, http://example.org/I_tc08_562, http://example.org/I_tc08_563, http://example.org/I_tc08_565, http://example.org/I_tc08_566, http://example.org/I_tc08_586, http://example.org/I_tc08_587, http://example.org/I_tc08_589, http://example.org/I_tc08_650, http://example.org/I_tc08_671, http://example.org/I_tc08_674, http://example.org/I_tc08_695, http://example.org/I_tc08_696, http://example.org/I_tc08_698, http://example.org/I_tc08_699, http://example.org/I_tc08_781, http://example.org/I_tc08_783, http://example.org/I_tc08_892]
+-[http://example.org/I_tc08_1004, http://example.org/I_tc08_1005, http://example.org/I_tc08_1006, http://example.org/I_tc08_1029, http://example.org/I_tc08_107, http://example.org/I_tc08_1113, http://example.org/I_tc08_1114, http://example.org/I_tc08_1115, http://example.org/I_tc08_1137, http://example.org/I_tc08_1138, http://example.org/I_tc08_1139, http://example.org/I_tc08_1200, http://example.org/I_tc08_1222, http://example.org/I_tc08_1223, http://example.org/I_tc08_1224, http://example.org/I_tc08_1246, http://example.org/I_tc08_1247, http://example.org/I_tc08_1248, http://example.org/I_tc08_1331, http://example.org/I_tc08_1332, http://example.org/I_tc08_1333, http://example.org/I_tc08_1356, http://example.org/I_tc08_1357, http://example.org/I_tc08_1379, http://example.org/I_tc08_1440, http://example.org/I_tc08_1441, http://example.org/I_tc08_1442, http://example.org/I_tc08_1464, http://example.org/I_tc08_1465, http://example.org/I_tc08_1466, http://example.org/I_tc08_1488, http://example.org/I_tc08_1489, http://example.org/I_tc08_217, http://example.org/I_tc08_219, http://example.org/I_tc08_300, http://example.org/I_tc08_302, http://example.org/I_tc08_304, http://example.org/I_tc08_325, http://example.org/I_tc08_326, http://example.org/I_tc08_328, http://example.org/I_tc08_349, http://example.org/I_tc08_410, http://example.org/I_tc08_413, http://example.org/I_tc08_433, http://example.org/I_tc08_434, http://example.org/I_tc08_437, http://example.org/I_tc08_458, http://example.org/I_tc08_459, http://example.org/I_tc08_542, http://example.org/I_tc08_543, http://example.org/I_tc08_546, http://example.org/I_tc08_568, http://example.org/I_tc08_630, http://example.org/I_tc08_651, http://example.org/I_tc08_652, http://example.org/I_tc08_655, http://example.org/I_tc08_675, http://example.org/I_tc08_676, http://example.org/I_tc08_677, http://example.org/I_tc08_679, http://example.org/I_tc08_760, http://example.org/I_tc08_763, http://example.org/I_tc08_764, http://example.org/I_tc08_784, http://example.org/I_tc08_787, http://example.org/I_tc08_788, http://example.org/I_tc08_871, http://example.org/I_tc08_872, http://example.org/I_tc08_893, http://example.org/I_tc08_897, http://example.org/I_tc08_980, http://example.org/I_tc08_981]
+?[]
+test set errors pos: [I_tc08_780, I_tc08_890, I_tc08_456, I_tc08_1351, I_tc08_1133, I_tc08_1375, I_tc08_1024, I_tc08_1157]
+test set errors neg: []
+fold 9:
+  training: 72 positive, 72 negative examples and 0 uncertain examples  testing: 0/8 correct positives, 8/8 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_13 only (not (C_tc08_16))
+  match: 50% (54.167% on training set)
+  commission: 50% (45.833% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 4
+  runtime: 10.009s
+
+
+Finished 10-folds cross-validation.
+runtime: av. 10.011s (deviation 0.004s; min 10.007s; max 10.022s)
+length: av. 3.7 (deviation 0.823; min 3; max 5)
+F-Measure on training set: av. 21.158% (deviation 27.952%; min 0%; max 68.571%)
+F-Measure: av. 16.087% (deviation 27.229%; min 0%; max 66.667%)
+Match rate on training set: av. 51.181% (deviation 2.269%; min 48.611%; max 54.861%)
+Match rate: av. 48.75% (deviation 4.93%; min 37.5%; max 56.25%)
+Commission rate: av. 51.25% (deviation 4.93%; min 43.75%; max 62.5%)
+Omission rate: av. 0% (deviation 0%; min 0%; max 0%)
+Induction rate: av. 0% (deviation 0%; min 0%; max 0%)

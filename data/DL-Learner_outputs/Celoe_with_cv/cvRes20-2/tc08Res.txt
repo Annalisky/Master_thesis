@@ -1,0 +1,609 @@
+DL-Learner command line interface
+Initializing component 'ks' of type OWL File ...
+... initialized component 'ks' in 1ms. Status: OK
+Initializing component 'reasoner' of type closed world reasoner ...
+Loaded reasoner: Pellet (com.clarkparsia.pellet.owlapiv3.PelletReasoner)
+Materializing TBox...
+materialising concepts
+[.....] 0%[.....] 1%[.....] 3%[.....] 5%[.....] 6%[.....] 8%[.....] 10%[.....] 11%[.....] 13%[.....] 15%[.....] 16%[.....] 18%[=....] 20%[=....] 21%[=....] 23%[=....] 25%[=....] 26%[=....] 28%[=....] 30%[=....] 31%materialising object properties ...
+[=....] 33%[=....] 35%[=....] 36%[=....] 38%[==...] 40%[==...] 41%[==...] 43%[==...] 45%[==...] 46%[==...] 48%[==...] 50%[==...] 51%[==...] 53%[==...] 55%[==...] 56%[==...] 58%[===..] 60%[===..] 61%[===..] 63%[===..] 65%[===..] 66%[===..] 68%[===..] 70%[===..] 71%[===..] 73%[===..] 75%[===..] 76%[===..] 78%[====.] 80%[====.] 81%[====.] 83%[====.] 85%[====.] 86%[====.] 88%[====.] 90%[====.] 91%[====.] 93%[====.] 95%[====.] 96%[====.] 98%materialising datatype properties
+...TBox materialised in 98 ms.
+... initialized component 'reasoner' in 538ms. Status: OK
+Initializing component 'lp' of type PosNegLPStandard ...
+... initialized component 'lp' in 0ms. Status: OK
+Initializing component 'alg' of type CELOE ...
+... initialized component 'alg' in 50ms. Status: OK
+start class:Thing
+more accurate (50.00%) class expression found after 19ms: Thing
+more accurate (60.71%) class expression found after 65ms: not (C_tc08_1)
+more accurate (64.29%) class expression found after 218ms: P_tc08_21 only C_tc08_8
+more accurate (67.86%) class expression found after 1s972ms: C_tc08_8 or (P_tc08_3 only C_tc08_17)
+Algorithm terminated successfully (time: 10s 0ms, 46268 descriptions tested, 25838 nodes in the search tree).
+
+number of retrievals: 48328
+retrieval reasoning time: 6s 437ms ( 0ms per retrieval)
+number of instance checks: 32934 (0 multiple)
+instance check reasoning time: 41ms ( 0ms per instance check)
+(complex) subsumption checks: 118 (0 multiple)
+subsumption reasoning time: 25ms ( 0ms per subsumption check)
+overall reasoning time: 6s 504ms
+
+solutions:
+1: C_tc08_8 or (P_tc08_3 only Nothing) (pred. acc.: 67.86%, F-measure: 75.68%)
+2: C_tc08_8 or (P_tc08_3 only C_tc08_17) (pred. acc.: 67.86%, F-measure: 75.68%)
+3: C_tc08_8 or (P_tc08_3 only C_tc08_15) (pred. acc.: 67.86%, F-measure: 75.68%)
+4: C_tc08_8 or (P_tc08_3 only C_tc08_11) (pred. acc.: 67.86%, F-measure: 75.68%)
+5: C_tc08_8 or (P_tc08_3 only C_tc08_10) (pred. acc.: 67.86%, F-measure: 75.68%)
+6: C_tc08_8 or (P_tc08_3 only C_tc08_1) (pred. acc.: 67.86%, F-measure: 75.68%)
+7: C_tc08_8 or (P_tc08_2 only C_tc08_18) (pred. acc.: 67.86%, F-measure: 75.68%)
+8: C_tc08_8 or (P_tc08_2 only C_tc08_17) (pred. acc.: 67.86%, F-measure: 75.68%)
+9: C_tc08_8 or (P_tc08_2 only C_tc08_15) (pred. acc.: 67.86%, F-measure: 75.68%)
+10: C_tc08_8 or (P_tc08_2 only C_tc08_14) (pred. acc.: 67.86%, F-measure: 75.68%)
+
+0.7333333333333333----0.7857142857142857
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_76, I_tc08_212]
+test set errors neg: [I_tc08_194]
+fold 0:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 1/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_8 or (P_tc08_3 only Nothing)
+  match: 25% (75% on training set)
+  commission: 75% (25% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.007s
+
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_211, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_76, I_tc08_212]
+test set errors neg: [I_tc08_194]
+fold 0:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 0/2 correct positives, 1/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_8 or (P_tc08_3 only Nothing)
+  match: 25% (75% on training set)
+  commission: 75% (25% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (60.71%) class expression found after 2ms: not (C_tc08_4)
+more accurate (64.29%) class expression found after 20ms: P_tc08_7 only C_tc08_1
+more accurate (71.43%) class expression found after 107ms: (not (C_tc08_1)) and (not (C_tc08_4))
+more accurate (75.00%) class expression found after 9s741ms: (not (C_tc08_1)) and (not (C_tc08_2)) and (not (C_tc08_4))
+Algorithm terminated successfully (time: 10s 0ms, 50132 descriptions tested, 32561 nodes in the search tree).
+
+number of retrievals: 98664
+retrieval reasoning time: 12s 794ms ( 0ms per retrieval)
+number of instance checks: 78003 (14 multiple)
+instance check reasoning time: 98ms ( 0ms per instance check)
+(complex) subsumption checks: 452 (0 multiple)
+subsumption reasoning time: 48ms ( 0ms per subsumption check)
+overall reasoning time: 12s 942ms
+
+solutions:
+1: (not (C_tc08_1)) and (not (C_tc08_2)) and (not (C_tc08_4)) (pred. acc.: 75.00%, F-measure: 80.00%)
+2: (not (C_tc08_1)) and (not (C_tc08_18)) and (not (C_tc08_4)) (pred. acc.: 75.00%, F-measure: 80.00%)
+3: (not (C_tc08_1)) and (not (C_tc08_4)) (pred. acc.: 71.43%, F-measure: 77.78%)
+4: C_tc08_9 and (not (C_tc08_1)) and (not (C_tc08_4)) (pred. acc.: 71.43%, F-measure: 77.78%)
+5: (not (C_tc08_1)) and (not (C_tc08_4)) and (not (C_tc08_6)) (pred. acc.: 71.43%, F-measure: 77.78%)
+6: (not (C_tc08_1)) and (not (C_tc08_13)) and (not (C_tc08_4)) (pred. acc.: 71.43%, F-measure: 77.78%)
+7: P_tc08_38 only (P_tc08_26 some C_tc08_0) (pred. acc.: 67.86%, F-measure: 75.68%)
+8: P_tc08_2 only (C_tc08_19 or C_tc08_8) (pred. acc.: 67.86%, F-measure: 75.68%)
+9: P_tc08_38 only (P_tc08_26 some (C_tc08_0 and C_tc08_6)) (pred. acc.: 67.86%, F-measure: 75.68%)
+10: P_tc08_38 only (P_tc08_26 some (C_tc08_0 and C_tc08_3)) (pred. acc.: 67.86%, F-measure: 75.68%)
+
+0.6666666666666666----1.0
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_280, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_236, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_292]
+test set errors neg: [I_tc08_291]
+fold 1:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 1/2 correct positives, 1/2 correct negatives 0/0 correct uncertain 
+  concept: (not (C_tc08_1))  and (not (C_tc08_2))  and (not (C_tc08_4))
+  match: 50% (75% on training set)
+  commission: 50% (25% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 8
+  runtime: 10.006s
+
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_280, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_236, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_292]
+test set errors neg: [I_tc08_291]
+fold 1:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 1/2 correct positives, 1/2 correct negatives 0/0 correct uncertain 
+  concept: (not (C_tc08_1))  and (not (C_tc08_2))  and (not (C_tc08_4))
+  match: 50% (75% on training set)
+  commission: 50% (25% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 8
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (63.33%) class expression found after 2ms: not (C_tc08_1)
+more accurate (66.67%) class expression found after 87ms: (not (C_tc08_1)) and (not (C_tc08_6))
+more accurate (70.00%) class expression found after 6s965ms: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4)))
+Algorithm terminated successfully (time: 10s 0ms, 49787 descriptions tested, 30980 nodes in the search tree).
+
+number of retrievals: 148620
+retrieval reasoning time: 19s 182ms ( 0ms per retrieval)
+number of instance checks: 123769 (28 multiple)
+instance check reasoning time: 155ms ( 0ms per instance check)
+(complex) subsumption checks: 692 (0 multiple)
+subsumption reasoning time: 65ms ( 0ms per subsumption check)
+overall reasoning time: 19s 404ms
+
+solutions:
+1: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 70.00%, F-measure: 76.92%)
+2: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_3))) (pred. acc.: 70.00%, F-measure: 76.92%)
+3: C_tc08_11 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 70.00%, F-measure: 76.92%)
+4: (not (C_tc08_1)) and (not (C_tc08_6)) (pred. acc.: 66.67%, F-measure: 75.00%)
+5: (not (C_tc08_1)) and (not (C_tc08_2)) (pred. acc.: 66.67%, F-measure: 75.00%)
+6: (not (C_tc08_1)) and (not (C_tc08_18)) (pred. acc.: 66.67%, F-measure: 75.00%)
+7: C_tc08_4 or ((not (C_tc08_1)) and (not (C_tc08_18))) (pred. acc.: 66.67%, F-measure: 75.00%)
+8: (C_tc08_4 or (not (C_tc08_1))) and (not (C_tc08_6)) (pred. acc.: 66.67%, F-measure: 75.00%)
+9: (C_tc08_4 or (not (C_tc08_1))) and (not (C_tc08_2)) (pred. acc.: 66.67%, F-measure: 75.00%)
+10: (C_tc08_4 or (not (C_tc08_1))) and (not (C_tc08_18)) (pred. acc.: 66.67%, F-measure: 75.00%)
+
+0.625----1.0
++[http://example.org/I_tc08_103, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_99]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 2:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 100% (70% on training set)
+  commission: 0% (30% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.008s
+
++[http://example.org/I_tc08_103, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_99]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 2:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 100% (70% on training set)
+  commission: 0% (30% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.008s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (64.29%) class expression found after 1ms: not (C_tc08_1)
+more accurate (67.86%) class expression found after 77ms: (not (C_tc08_1)) and (not (C_tc08_6))
+more accurate (75.00%) class expression found after 3s791ms: C_tc08_19 or C_tc08_5 or C_tc08_8
+more accurate (82.14%) class expression found after 3s846ms: C_tc08_19 or C_tc08_5 or (C_tc08_8 and (not (C_tc08_1)))
+Algorithm terminated successfully (time: 10s 0ms, 51662 descriptions tested, 30324 nodes in the search tree).
+
+number of retrievals: 200419
+retrieval reasoning time: 25s 590ms ( 0ms per retrieval)
+number of instance checks: 156180 (42 multiple)
+instance check reasoning time: 194ms ( 0ms per instance check)
+(complex) subsumption checks: 985 (0 multiple)
+subsumption reasoning time: 79ms ( 0ms per subsumption check)
+overall reasoning time: 25s 865ms
+
+solutions:
+1: C_tc08_19 or C_tc08_5 or (C_tc08_8 and (not (C_tc08_1))) (pred. acc.: 82.14%, F-measure: 84.85%)
+2: (C_tc08_19 or C_tc08_5 or C_tc08_8) and (not (C_tc08_6)) (pred. acc.: 82.14%, F-measure: 84.85%)
+3: (C_tc08_19 or C_tc08_5 or C_tc08_8) and (not (C_tc08_1)) (pred. acc.: 82.14%, F-measure: 84.85%)
+4: C_tc08_5 or C_tc08_8 or (C_tc08_19 and (not (C_tc08_3))) (pred. acc.: 78.57%, F-measure: 82.35%)
+5: C_tc08_19 or C_tc08_5 or (C_tc08_8 and (not (C_tc08_6))) (pred. acc.: 78.57%, F-measure: 82.35%)
+6: C_tc08_19 or C_tc08_5 or (C_tc08_8 and (not (C_tc08_18))) (pred. acc.: 78.57%, F-measure: 82.35%)
+7: (C_tc08_19 or C_tc08_5 or C_tc08_8) and (not (C_tc08_18)) (pred. acc.: 78.57%, F-measure: 82.35%)
+8: C_tc08_19 or C_tc08_5 or C_tc08_8 (pred. acc.: 75.00%, F-measure: 80.00%)
+9: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 75.00%, F-measure: 80.00%)
+10: C_tc08_11 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 75.00%, F-measure: 80.00%)
+
+0.7368421052631579----1.0
++[http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_200]
+test set errors neg: [I_tc08_115]
+fold 3:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 1/2 correct positives, 1/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_19 or C_tc08_5 or (C_tc08_8  and (not (C_tc08_1)))
+  match: 50% (82.143% on training set)
+  commission: 50% (17.857% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 8
+  runtime: 10.006s
+
++[http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_200]
+test set errors neg: [I_tc08_115]
+fold 3:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 1/2 correct positives, 1/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_19 or C_tc08_5 or (C_tc08_8  and (not (C_tc08_1)))
+  match: 50% (82.143% on training set)
+  commission: 50% (17.857% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 8
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (63.33%) class expression found after 1ms: not (C_tc08_1)
+more accurate (66.67%) class expression found after 71ms: (not (C_tc08_1)) and (not (C_tc08_6))
+more accurate (70.00%) class expression found after 7s248ms: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4)))
+Algorithm terminated successfully (time: 10s 0ms, 50118 descriptions tested, 31287 nodes in the search tree).
+
+number of retrievals: 250696
+retrieval reasoning time: 32s 9ms ( 0ms per retrieval)
+number of instance checks: 204142 (56 multiple)
+instance check reasoning time: 254ms ( 0ms per instance check)
+(complex) subsumption checks: 1207 (0 multiple)
+subsumption reasoning time: 90ms ( 0ms per subsumption check)
+overall reasoning time: 32s 355ms
+
+solutions:
+1: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 70.00%, F-measure: 76.92%)
+2: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_3))) (pred. acc.: 70.00%, F-measure: 76.92%)
+3: C_tc08_12 or ((not (C_tc08_1)) and (not (C_tc08_3))) (pred. acc.: 70.00%, F-measure: 76.92%)
+4: C_tc08_11 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 70.00%, F-measure: 76.92%)
+5: P_tc08_2 only (P_tc08_2 only C_tc08_19) (pred. acc.: 66.67%, F-measure: 75.00%)
+6: C_tc08_15 or (P_tc08_2 only C_tc08_7) (pred. acc.: 66.67%, F-measure: 75.00%)
+7: (not (C_tc08_1)) and (not (C_tc08_6)) (pred. acc.: 66.67%, F-measure: 75.00%)
+8: (not (C_tc08_1)) and (not (C_tc08_2)) (pred. acc.: 66.67%, F-measure: 75.00%)
+9: (not (C_tc08_1)) and (not (C_tc08_18)) (pred. acc.: 66.67%, F-measure: 75.00%)
+10: C_tc08_15 or (C_tc08_9 and (P_tc08_2 only C_tc08_7)) (pred. acc.: 66.67%, F-measure: 75.00%)
+
+0.625----1.0
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 4:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 100% (70% on training set)
+  commission: 0% (30% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: []
+test set errors neg: []
+fold 4:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 100% (70% on training set)
+  commission: 0% (30% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (64.29%) class expression found after 1ms: not (C_tc08_1)
+more accurate (67.86%) class expression found after 72ms: (not (C_tc08_1)) and (not (C_tc08_6))
+more accurate (71.43%) class expression found after 6s270ms: P_tc08_3 only (P_tc08_26 some C_tc08_2)
+more accurate (75.00%) class expression found after 7s426ms: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4)))
+Algorithm terminated successfully (time: 10s 0ms, 49622 descriptions tested, 30087 nodes in the search tree).
+
+number of retrievals: 300485
+retrieval reasoning time: 38s 518ms ( 0ms per retrieval)
+number of instance checks: 249683 (70 multiple)
+instance check reasoning time: 312ms ( 0ms per instance check)
+(complex) subsumption checks: 1403 (0 multiple)
+subsumption reasoning time: 100ms ( 0ms per subsumption check)
+overall reasoning time: 38s 932ms
+
+solutions:
+1: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 75.00%, F-measure: 80.00%)
+2: C_tc08_11 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 75.00%, F-measure: 80.00%)
+3: P_tc08_3 only (P_tc08_26 some C_tc08_2) (pred. acc.: 71.43%, F-measure: 77.78%)
+4: P_tc08_3 only (P_tc08_26 some (not (C_tc08_8))) (pred. acc.: 71.43%, F-measure: 77.78%)
+5: P_tc08_3 only (P_tc08_26 some (not (C_tc08_4))) (pred. acc.: 71.43%, F-measure: 77.78%)
+6: P_tc08_3 only (P_tc08_26 some (not (C_tc08_15))) (pred. acc.: 71.43%, F-measure: 77.78%)
+7: P_tc08_3 only (P_tc08_26 some (P_tc08_39 some Thing)) (pred. acc.: 71.43%, F-measure: 77.78%)
+8: P_tc08_3 only (P_tc08_26 some (P_tc08_39 some C_tc08_7)) (pred. acc.: 71.43%, F-measure: 77.78%)
+9: P_tc08_3 only (P_tc08_26 some (P_tc08_39 some C_tc08_3)) (pred. acc.: 71.43%, F-measure: 77.78%)
+10: P_tc08_3 only (P_tc08_26 some (P_tc08_38 some Thing)) (pred. acc.: 71.43%, F-measure: 77.78%)
+
+0.6666666666666666----1.0
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_171, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: []
+test set errors neg: [I_tc08_114, I_tc08_51]
+fold 5:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 0/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 50% (75% on training set)
+  commission: 50% (25% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_171, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: []
+test set errors neg: [I_tc08_114, I_tc08_51]
+fold 5:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 0/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 50% (75% on training set)
+  commission: 50% (25% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.007s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (60.71%) class expression found after 1ms: not (C_tc08_1)
+more accurate (64.29%) class expression found after 15ms: P_tc08_7 only C_tc08_1
+more accurate (67.86%) class expression found after 1s347ms: C_tc08_8 or (P_tc08_3 only C_tc08_17)
+Algorithm terminated successfully (time: 10s 0ms, 50415 descriptions tested, 32140 nodes in the search tree).
+
+number of retrievals: 351024
+retrieval reasoning time: 44s 818ms ( 0ms per retrieval)
+number of instance checks: 294539 (84 multiple)
+instance check reasoning time: 368ms ( 0ms per instance check)
+(complex) subsumption checks: 1529 (0 multiple)
+subsumption reasoning time: 106ms ( 0ms per subsumption check)
+overall reasoning time: 45s 294ms
+
+solutions:
+1: C_tc08_8 or (P_tc08_3 only Nothing) (pred. acc.: 67.86%, F-measure: 75.68%)
+2: C_tc08_8 or (P_tc08_3 only C_tc08_17) (pred. acc.: 67.86%, F-measure: 75.68%)
+3: C_tc08_8 or (P_tc08_3 only C_tc08_15) (pred. acc.: 67.86%, F-measure: 75.68%)
+4: C_tc08_8 or (P_tc08_3 only C_tc08_11) (pred. acc.: 67.86%, F-measure: 75.68%)
+5: C_tc08_8 or (P_tc08_3 only C_tc08_10) (pred. acc.: 67.86%, F-measure: 75.68%)
+6: C_tc08_8 or (P_tc08_3 only C_tc08_1) (pred. acc.: 67.86%, F-measure: 75.68%)
+7: C_tc08_8 or (P_tc08_3 only (C_tc08_17 and C_tc08_6)) (pred. acc.: 67.86%, F-measure: 75.68%)
+8: C_tc08_8 or (P_tc08_3 only (C_tc08_17 and C_tc08_5)) (pred. acc.: 67.86%, F-measure: 75.68%)
+9: C_tc08_8 or (C_tc08_9 and (P_tc08_3 only C_tc08_17)) (pred. acc.: 67.86%, F-measure: 75.68%)
+10: C_tc08_9 and (C_tc08_8 or (P_tc08_3 only C_tc08_17)) (pred. acc.: 67.86%, F-measure: 75.68%)
+
+0.7692307692307693----0.7142857142857143
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_249, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_280]
+test set errors neg: [I_tc08_19, I_tc08_236]
+fold 6:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 1/2 correct positives, 0/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_8 or (P_tc08_3 only Nothing)
+  match: 25% (75% on training set)
+  commission: 75% (25% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_249, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_280]
+test set errors neg: [I_tc08_19, I_tc08_236]
+fold 6:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 1/2 correct positives, 0/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_8 or (P_tc08_3 only Nothing)
+  match: 25% (75% on training set)
+  commission: 75% (25% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (63.33%) class expression found after 2ms: not (C_tc08_1)
+more accurate (66.67%) class expression found after 75ms: (not (C_tc08_1)) and (not (C_tc08_6))
+more accurate (70.00%) class expression found after 1s640ms: C_tc08_16 or (P_tc08_3 only C_tc08_11)
+Algorithm terminated successfully (time: 10s 0ms, 49485 descriptions tested, 29405 nodes in the search tree).
+
+number of retrievals: 400688
+retrieval reasoning time: 51s 264ms ( 0ms per retrieval)
+number of instance checks: 344173 (98 multiple)
+instance check reasoning time: 431ms ( 0ms per instance check)
+(complex) subsumption checks: 1783 (0 multiple)
+subsumption reasoning time: 117ms ( 0ms per subsumption check)
+overall reasoning time: 51s 813ms
+
+solutions:
+1: P_tc08_3 only (P_tc08_19 some C_tc08_6) (pred. acc.: 70.00%, F-measure: 76.92%)
+2: P_tc08_3 only (P_tc08_19 some C_tc08_2) (pred. acc.: 70.00%, F-measure: 76.92%)
+3: C_tc08_16 or (P_tc08_3 only C_tc08_11) (pred. acc.: 70.00%, F-measure: 76.92%)
+4: P_tc08_3 only (P_tc08_19 min 2 Thing) (pred. acc.: 70.00%, F-measure: 76.92%)
+5: P_tc08_3 only (P_tc08_19 min 2 C_tc08_7) (pred. acc.: 70.00%, F-measure: 76.92%)
+6: P_tc08_3 only (P_tc08_19 min 2 C_tc08_3) (pred. acc.: 70.00%, F-measure: 76.92%)
+7: P_tc08_3 only (P_tc08_19 some (not (C_tc08_19))) (pred. acc.: 70.00%, F-measure: 76.92%)
+8: C_tc08_16 or (P_tc08_3 only (C_tc08_11 and C_tc08_8)) (pred. acc.: 70.00%, F-measure: 76.92%)
+9: C_tc08_16 or (P_tc08_3 only (C_tc08_11 and C_tc08_7)) (pred. acc.: 70.00%, F-measure: 76.92%)
+10: C_tc08_16 or (P_tc08_3 only (C_tc08_11 and C_tc08_4)) (pred. acc.: 70.00%, F-measure: 76.92%)
+
+1.0----0.13333333333333333
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_195]
+test set errors neg: []
+fold 7:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_3 only (P_tc08_19 some C_tc08_6)
+  match: 50% (56.667% on training set)
+  commission: 50% (43.333% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: [I_tc08_195]
+test set errors neg: []
+fold 7:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 0/1 correct positives, 1/1 correct negatives 0/0 correct uncertain 
+  concept: P_tc08_3 only (P_tc08_19 some C_tc08_6)
+  match: 50% (56.667% on training set)
+  commission: 50% (43.333% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 5
+  runtime: 10.006s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (60.71%) class expression found after 1ms: not (C_tc08_1)
+more accurate (64.29%) class expression found after 68ms: (not (C_tc08_1)) and (not (C_tc08_6))
+more accurate (71.43%) class expression found after 8s843ms: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4)))
+Algorithm terminated successfully (time: 10s 0ms, 52830 descriptions tested, 32527 nodes in the search tree).
+
+number of retrievals: 453623
+retrieval reasoning time: 57s 525ms ( 0ms per retrieval)
+number of instance checks: 375125 (112 multiple)
+instance check reasoning time: 469ms ( 0ms per instance check)
+(complex) subsumption checks: 1925 (0 multiple)
+subsumption reasoning time: 122ms ( 0ms per subsumption check)
+overall reasoning time: 58s 117ms
+
+solutions:
+1: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 71.43%, F-measure: 77.78%)
+2: C_tc08_11 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 71.43%, F-measure: 77.78%)
+3: (C_tc08_8 or (not (C_tc08_4))) and (not (C_tc08_1)) (pred. acc.: 71.43%, F-measure: 77.78%)
+4: (C_tc08_5 or (not (C_tc08_4))) and (not (C_tc08_1)) (pred. acc.: 71.43%, F-measure: 77.78%)
+5: (C_tc08_11 or (not (C_tc08_4))) and (not (C_tc08_1)) (pred. acc.: 71.43%, F-measure: 77.78%)
+6: (C_tc08_8 or (not (C_tc08_4))) and (not (C_tc08_6)) (pred. acc.: 67.86%, F-measure: 75.68%)
+7: (C_tc08_5 or (not (C_tc08_4))) and (not (C_tc08_6)) (pred. acc.: 67.86%, F-measure: 75.68%)
+8: (C_tc08_11 or (not (C_tc08_4))) and (not (C_tc08_6)) (pred. acc.: 67.86%, F-measure: 75.68%)
+9: C_tc08_8 or (P_tc08_3 only Nothing) (pred. acc.: 64.29%, F-measure: 73.68%)
+10: C_tc08_8 or (P_tc08_3 only C_tc08_17) (pred. acc.: 64.29%, F-measure: 73.68%)
+
+0.6363636363636364----1.0
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_76]
+-[http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87]
+?[]
+test set errors pos: []
+test set errors neg: [I_tc08_99]
+fold 8:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 1/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 75% (71.429% on training set)
+  commission: 25% (28.571% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.008s
+
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_171, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_76]
+-[http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_182, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87]
+?[]
+test set errors pos: []
+test set errors neg: [I_tc08_99]
+fold 8:
+  training: 14 positive, 14 negative examples and 0 uncertain examples  testing: 2/2 correct positives, 1/2 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 75% (71.429% on training set)
+  commission: 25% (28.571% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.008s
+
+start class:Thing
+more accurate (50.00%) class expression found after 0ms: Thing
+more accurate (63.33%) class expression found after 2ms: not (C_tc08_1)
+more accurate (66.67%) class expression found after 70ms: (not (C_tc08_1)) and (not (C_tc08_6))
+more accurate (73.33%) class expression found after 7s432ms: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4)))
+Algorithm terminated successfully (time: 10s 0ms, 49880 descriptions tested, 30506 nodes in the search tree).
+
+number of retrievals: 503662
+retrieval reasoning time: 63s 942ms ( 0ms per retrieval)
+number of instance checks: 422946 (126 multiple)
+instance check reasoning time: 531ms ( 0ms per instance check)
+(complex) subsumption checks: 2133 (0 multiple)
+subsumption reasoning time: 131ms ( 0ms per subsumption check)
+overall reasoning time: 64s 605ms
+
+solutions:
+1: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 73.33%, F-measure: 78.95%)
+2: C_tc08_11 or ((not (C_tc08_1)) and (not (C_tc08_4))) (pred. acc.: 73.33%, F-measure: 78.95%)
+3: C_tc08_5 or ((not (C_tc08_1)) and (not (C_tc08_3))) (pred. acc.: 70.00%, F-measure: 76.92%)
+4: C_tc08_8 or (P_tc08_3 only Nothing) (pred. acc.: 66.67%, F-measure: 75.00%)
+5: C_tc08_8 or (P_tc08_3 only C_tc08_17) (pred. acc.: 66.67%, F-measure: 75.00%)
+6: C_tc08_8 or (P_tc08_3 only C_tc08_15) (pred. acc.: 66.67%, F-measure: 75.00%)
+7: C_tc08_8 or (P_tc08_3 only C_tc08_11) (pred. acc.: 66.67%, F-measure: 75.00%)
+8: C_tc08_8 or (P_tc08_3 only C_tc08_10) (pred. acc.: 66.67%, F-measure: 75.00%)
+9: C_tc08_8 or (P_tc08_3 only C_tc08_1) (pred. acc.: 66.67%, F-measure: 75.00%)
+10: (not (C_tc08_1)) and (not (C_tc08_6)) (pred. acc.: 66.67%, F-measure: 75.00%)
+
+0.6521739130434783----1.0
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: []
+test set errors neg: [I_tc08_182]
+fold 9:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 0/1 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 50% (73.333% on training set)
+  commission: 50% (26.667% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.006s
+
++[http://example.org/I_tc08_103, http://example.org/I_tc08_104, http://example.org/I_tc08_116, http://example.org/I_tc08_183, http://example.org/I_tc08_195, http://example.org/I_tc08_200, http://example.org/I_tc08_212, http://example.org/I_tc08_224, http://example.org/I_tc08_225, http://example.org/I_tc08_249, http://example.org/I_tc08_280, http://example.org/I_tc08_292, http://example.org/I_tc08_40, http://example.org/I_tc08_76, http://example.org/I_tc08_88]
+-[http://example.org/I_tc08_102, http://example.org/I_tc08_114, http://example.org/I_tc08_115, http://example.org/I_tc08_127, http://example.org/I_tc08_170, http://example.org/I_tc08_19, http://example.org/I_tc08_194, http://example.org/I_tc08_211, http://example.org/I_tc08_223, http://example.org/I_tc08_235, http://example.org/I_tc08_236, http://example.org/I_tc08_291, http://example.org/I_tc08_51, http://example.org/I_tc08_87, http://example.org/I_tc08_99]
+?[]
+test set errors pos: []
+test set errors neg: [I_tc08_182]
+fold 9:
+  training: 15 positive, 15 negative examples and 0 uncertain examples  testing: 1/1 correct positives, 0/1 correct negatives 0/0 correct uncertain 
+  concept: C_tc08_5 or ((not (C_tc08_1))  and (not (C_tc08_4)))
+  match: 50% (73.333% on training set)
+  commission: 50% (26.667% on training set)
+  omission: 0% (0% on training set)
+  induction: 0% (0% on training set)
+  length: 7
+  runtime: 10.006s
+
+
+Finished 10-folds cross-validation.
+runtime: av. 10.007s (deviation 0.001s; min 10.006s; max 10.008s)
+length: av. 6.6 (deviation 1.174; min 5; max 8)
+F-Measure on training set: av. 72.889% (deviation 17.588%; min 23.529%; max 84.848%)
+F-Measure: av. 55.333% (deviation 35.388%; min 0%; max 100%)
+Match rate on training set: av. 72.357% (deviation 6.522%; min 56.667%; max 82.143%)
+Match rate: av. 57.5% (deviation 26.484%; min 25%; max 100%)
+Commission rate: av. 42.5% (deviation 26.484%; min 0%; max 75%)
+Omission rate: av. 0% (deviation 0%; min 0%; max 0%)
+Induction rate: av. 0% (deviation 0%; min 0%; max 0%)
